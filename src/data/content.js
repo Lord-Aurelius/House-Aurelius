@@ -171,7 +171,7 @@ export const teamMembers = [
     name: 'Kelvin Aurelius',
     role: 'Founder / Director',
     bio: 'Leads strategy and platform direction across all House Aurelius products.',
-    image:'/images/kelvin-aurelius.jpg',
+    image:'/images/Kelvin-aurelius.jpg',
   },
   {
     name: 'Staff Profile 2',
