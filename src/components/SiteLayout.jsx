@@ -11,7 +11,9 @@ export function SiteLayout() {
     <div className="page">
       <header className="site-header">
         <div className="brand-wrap">
-          <p className="brand">House Aurelius</p>
+          <p className="brand">
+            <span className="brand-sun">☀</span> House Aurelius
+          </p>
           <p className="brand-subtitle">Securely connecting your business platforms</p>
         </div>
         <nav className="nav">
@@ -32,7 +34,8 @@ export function SiteLayout() {
       </main>
 
       <footer className="footer">
-        <p>House Aurelius. Built to connect your platforms securely.</p>
+        <p className="footer-brand"><span className="brand-sun">☀</span> House Aurelius</p>
+        <p>Built to connect your platforms securely across Africa.</p>
       </footer>
     </div>
   )

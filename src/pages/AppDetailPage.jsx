@@ -91,7 +91,7 @@ export function AppDetailPage() {
 
             {app.landing.highlights && (
               <section className="detail-block top-space">
-                <h2>Why Schools Choose HAES</h2>
+                <h2>Why Choose {app.name}</h2>
                 <ul className="highlight-list">
                   {app.landing.highlights.map((highlight) => (
                     <li key={highlight}>{highlight}</li>
@@ -118,7 +118,7 @@ export function AppDetailPage() {
                     key={image}
                     className="haes-gallery-image"
                     src={image}
-                    alt="HAES platform context"
+                    alt={`${app.name} platform context`}
                   />
                 ))}
               </section>
@@ -180,9 +180,6 @@ export function AppDetailPage() {
         <div className="actions top-space">
           <a className="button primary" href={app.url} target="_blank" rel="noreferrer">
             Open {app.name}
-          </a>
-          <a className="button" href={app.marketplaceUrl} target="_blank" rel="noreferrer">
-            Visit Marketplace
           </a>
         </div>
       </article>

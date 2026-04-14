@@ -1,5 +1,5 @@
 export const heroImage =
-  'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80'
+  'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1400&q=80'
 
 export const platformApps = [
   {
@@ -99,7 +99,7 @@ export const platformApps = [
     url: 'https://hapos.vercel.app',
     marketplaceUrl: 'https://hapos.vercel.app',
     image:
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=80',
     overview:
       'HAPOS is a point-of-sale platform tailored for African beauty shops, salons, and spas, built for daily operations, customer relationships, and financial control.',
     modules: [
@@ -115,6 +115,78 @@ export const platformApps = [
       'Reception and cashier staff',
       'Accounting staff',
     ],
+    landing: {
+      headline: 'Run Your Salon. Control Every Booking and Sale.',
+      subtext:
+        'HAPOS is built for barbershops, salons, and spas—managing appointments, services, inventory, and payments in one system. Keep operations tight. Keep revenue visible.',
+      primaryCta: 'Get Started',
+      secondaryCta: 'Request Demo',
+      valueBlock:
+        'HAPOS replaces appointment books, manual records, and scattered payment tracking. Every client, every service, every transaction—organized and accessible in real time.',
+      capabilities: [
+        {
+          badge: 'AC',
+          title: 'Appointment & Client Management',
+          text: 'Schedule bookings, track client history, and manage walk-ins without confusion.',
+        },
+        {
+          badge: 'SS',
+          title: 'Service & Sales Processing',
+          text: 'Handle service charges and product sales in a single, fast checkout flow.',
+        },
+        {
+          badge: 'IC',
+          title: 'Inventory Control',
+          text: 'Track products, usage, and restocking to avoid shortages and leakage.',
+        },
+        {
+          badge: 'FV',
+          title: 'Financial Visibility',
+          text: 'Monitor daily earnings, staff performance, and cash flow with precision.',
+        },
+      ],
+      authority:
+        'Built for high-traffic service environments. HAPOS enforces structure at the front desk, reduces missed bookings, and keeps revenue tracking exact.',
+      highlights: [
+        'Manage 50+ clients a day without losing track',
+        'Instant view of daily earnings and top-performing services',
+        'Real-time sales dashboard with staff performance breakdown',
+      ],
+      impactMetrics: [
+        { label: 'Client throughput', value: 'Manage 50+ per day' },
+        { label: 'Revenue clarity', value: 'Daily earnings, live' },
+        { label: 'Booking control', value: 'Zero missed appointments' },
+      ],
+      conversion:
+        'Stop relying on memory and paper. Run your shop on a system designed for speed, accuracy, and control.',
+      conversionCta: 'Deploy HAPOS in Your Shop',
+      gallery: [],
+      storyBlocks: [
+        {
+          title: 'Front Desk, Under Control',
+          text: 'Receptionists handle walk-ins, bookings, and payments from a single screen—no double-booking, no lost records, no delays.',
+          image:
+            'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Every Service, Every Sale Tracked',
+          text: 'From a haircut to a product sale, HAPOS captures every transaction. At the end of the day, your revenue report is ready—no manual tallying needed.',
+          image:
+            'https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Stock Levels That Don\'t Surprise You',
+          text: 'Know what products are running low before they run out. HAPOS ties inventory directly to sales so restocking is proactive, not reactive.',
+          image:
+            'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80',
+        },
+      ],
+      testimonial: {
+        quote:
+          'Before HAPOS, we tracked bookings in a notebook and counted cash at the end of the day with no real record. Now every service, every product, every payment is logged. We actually know what our shop earns each day.',
+        author: 'Salon Owner, Lagos',
+      },
+    },
   },
   {
     id: 'hare',
@@ -136,6 +208,83 @@ export const platformApps = [
       'Owner-ready financial and operational reports',
     ],
     audience: ['Property managers', 'Landlords', 'Facility accountants', 'Leasing officers'],
+    landing: {
+      headline: 'One System for Complete Property Control',
+      subtext:
+        'HARE is a real estate management platform that unifies tenant registration, rent collection, communication, and property tracking. From onboarding to payments, everything is structured, traceable, and accessible in real time.',
+      primaryCta: 'Get Started',
+      secondaryCta: 'Request Demo',
+      valueBlock:
+        'HARE removes fragmented property management processes. Tenant records, rent status, and landlord communication are centralized in one system—reducing delays, disputes, and missing data.',
+      capabilities: [
+        {
+          badge: 'TR',
+          title: 'Tenant Registration & Management',
+          text: 'Register tenants with structured profiles linked to each unit and property.',
+        },
+        {
+          badge: 'RC',
+          title: 'Rent Collection & Tracking',
+          text: 'Monitor payments, arrears, and receipts with real-time financial visibility.',
+        },
+        {
+          badge: 'TL',
+          title: 'Tenant–Landlord Communication',
+          text: 'Direct messaging system for notices, updates, and issue resolution.',
+        },
+        {
+          badge: 'QR',
+          title: 'QR-Based Verification System',
+          text: 'Use QR codes for tenant check-in, registration confirmation, and payment validation at the property level.',
+        },
+        {
+          badge: 'MP',
+          title: 'Marketplace Integration',
+          text: 'List and discover properties, vacancies, and rental opportunities within a built-in marketplace.',
+        },
+      ],
+      authority:
+        'Built for structured property ecosystems. HARE enforces accountability between tenants and landlords, reduces administrative friction, and creates a transparent rental flow from listing to occupancy.',
+      highlights: [
+        'Track every tenant and payment without spreadsheets',
+        'Instant arrears visibility across all units',
+        'QR-based verification for every registered tenant',
+      ],
+      impactMetrics: [
+        { label: 'Tenant visibility', value: 'Every unit, every status' },
+        { label: 'Arrears tracking', value: 'Instant across all units' },
+        { label: 'Admin overhead', value: 'Reduced to zero manual work' },
+      ],
+      conversion:
+        'Eliminate manual tracking and disconnected records. Manage your entire property portfolio through a single controlled system.',
+      conversionCta: 'Deploy HARE for Your Properties',
+      gallery: [],
+      storyBlocks: [
+        {
+          title: 'Tenant Onboarding Without the Paperwork',
+          text: 'Register tenants digitally, link them to specific units, and generate QR verification—all in minutes. Every record is searchable and always up to date.',
+          image:
+            'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Rent Collection, Tracked to the Day',
+          text: 'Know who has paid, who is overdue, and by how much—across every property you manage. HARE gives landlords a real-time rent ledger with no manual tallying.',
+          image:
+            'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Happy Tenants, Smooth Operations',
+          text: 'When tenants can communicate issues directly and landlords respond through the platform, disputes resolve faster and occupancy stays high.',
+          image:
+            'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+        },
+      ],
+      testimonial: {
+        quote:
+          'Managing 12 units across two properties used to mean chasing tenants by phone and writing receipts by hand. HARE changed that completely. I can see who has paid, who owes, and what each unit looks like—all from one screen.',
+        author: 'Property Manager, Accra',
+      },
+    },
   },
   {
     id: 'church-lib',
@@ -157,6 +306,88 @@ export const platformApps = [
       'Administrative oversight for church leadership',
     ],
     audience: ['Church administrators', 'Finance teams', 'Pastoral staff', 'Media teams'],
+    landing: {
+      headline: 'One System for a Fully Connected Church',
+      subtext:
+        'Church-Lib centralizes church operations into a single platform—member registration, attendance tracking, communication, media, and administration. Structured, transparent, and easy to manage.',
+      primaryCta: 'Get Started',
+      secondaryCta: 'Request Demo',
+      valueBlock:
+        'Church-Lib replaces fragmented church records and manual processes. Membership, attendance, announcements, and internal coordination are unified in one controlled system.',
+      capabilities: [
+        {
+          badge: 'MR',
+          title: 'Member Registration & Management',
+          text: 'Collect and maintain structured member profiles for complete congregation visibility.',
+        },
+        {
+          badge: 'QR',
+          title: 'QR Attendance System',
+          text: 'Record attendance quickly and accurately using QR-based check-ins.',
+        },
+        {
+          badge: 'MA',
+          title: 'Media Access',
+          text: 'Share sermons, teachings, and church content directly within the platform.',
+        },
+        {
+          badge: 'NA',
+          title: 'Church News & Activities',
+          text: 'Distribute announcements, events, and updates in real time.',
+        },
+        {
+          badge: 'SL',
+          title: 'Staff Daily Logs',
+          text: 'Track staff activity, duties, and operational updates for accountability.',
+        },
+        {
+          badge: 'MP',
+          title: 'Marketplace Integration',
+          text: 'Enable a shared marketplace for church-related goods, services, and community exchange.',
+        },
+      ],
+      authority:
+        'Built for structured ministry operations. Church-Lib improves coordination, strengthens communication, and ensures every aspect of church management is documented and accessible.',
+      highlights: [
+        'Full congregation visibility from a single member registry',
+        'QR-based attendance that replaces paper sign-in sheets',
+        'Sermons, media, and announcements in one accessible platform',
+      ],
+      impactMetrics: [
+        { label: 'Member records', value: 'Structured & searchable' },
+        { label: 'Attendance capture', value: 'QR check-in, instant' },
+        { label: 'Communication', value: 'Real-time announcements' },
+      ],
+      conversion:
+        'Move from manual records to a unified church system designed for clarity, accountability, and growth.',
+      conversionCta: 'Deploy Church-Lib for Your Ministry',
+      gallery: [],
+      storyBlocks: [
+        {
+          title: 'Every Member, Properly Registered',
+          text: 'Build a structured record for every congregation member—names, family units, contact details, and history—so your church always knows who it serves.',
+          image:
+            'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Attendance Without the Clipboard',
+          text: 'Members check in via QR code on their phone. Attendance is captured instantly—no paper, no manual entry, no missing records.',
+          image:
+            'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Sermons and Media, Always Accessible',
+          text: 'Upload and share service recordings, teaching series, and church media through the platform—so no member misses what matters.',
+          image:
+            'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80',
+        },
+      ],
+      testimonial: {
+        quote:
+          'We had member records in three different places—a register, a WhatsApp group, and the finance team\'s notebook. Church-Lib brought it all into one system. Our pastors, admin, and media team now work from the same platform without confusion.',
+        author: 'Church Administrator, Nairobi',
+      },
+    },
   },
 ]
 
