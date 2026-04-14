@@ -171,8 +171,7 @@ export const teamMembers = [
     name: 'Kelvin Aurelius',
     role: 'Founder / Director',
     bio: 'Leads strategy and platform direction across all House Aurelius products.',
-    image:
-      'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=700&q=80',
+    image:'/images/kelvin-aurelius.jpg',
   },
   {
     name: 'Staff Profile 2',
