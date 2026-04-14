@@ -168,7 +168,7 @@ export const publicStats = [
 
 export const teamMembers = [
   {
-    name: 'Staff Profile 1',
+    name: 'Kelvin Aurelius',
     role: 'Founder / Director',
     bio: 'Leads strategy and platform direction across all House Aurelius products.',
     image:
@@ -192,8 +192,8 @@ export const teamMembers = [
 
 export const apkInfo = {
   version: 'v1.0.0',
-  size: '28 MB',
+  size: '4 MB',
   releaseDate: 'Apr 13, 2026',
   checksum: 'SHA256: replace-with-real-checksum',
-  url: 'https://example.com/house-aurelius.apk',
+  url: 'https://drive.google.com/uc?export=download&id=1CCuaUOsRSg4-I6TxXiEIFqsW_EYBK0PO',
 }
