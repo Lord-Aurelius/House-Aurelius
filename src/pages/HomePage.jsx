@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { heroImage, platformApps, publicStats } from '../data/content'
+import { platformApps, publicStats } from '../data/content'
 import { getPublicMetrics } from '../services/publicMetrics'
 
 export function HomePage() {
@@ -29,26 +29,42 @@ export function HomePage() {
   return (
     <>
       <section className="hero">
-        <img className="hero-image" src={heroImage} alt="House Aurelius digital operations" />
-        <p className="eyebrow">Unified Business Platform</p>
-        <h1>House Aurelius</h1>
-        <p className="intro">
-          One gateway to HAES, HAPOS, HARE, and Church-lib. This dashboard is
-          public-safe and only displays non-sensitive, high-level information.
-        </p>
-        <div className="actions center">
-          <a className="button primary" href="#platforms">
-            Explore Platforms
-          </a>
-          <Link className="button ghost" to="/about">
-            Meet the Team
-          </Link>
+        <div className="hero-image-wrap">
+          <img
+            className="hero-image"
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1400&q=80"
+            alt="African professionals working with technology"
+          />
+          <div className="hero-image-overlay" />
+        </div>
+        <div className="hero-content">
+          <p className="eyebrow">Unified Business Platform</p>
+          <h1 className="hero-title">
+            <span className="hero-title-line">House</span>
+            <span className="hero-title-accent">Aurelius</span>
+          </h1>
+          <p className="intro">
+            One gateway to HAES, HAPOS, HARE, and Church-lib — purpose-built platforms
+            for schools, salons, property, and ministry across Africa.
+          </p>
+          <div className="actions center">
+            <a className="button primary" href="#platforms">
+              Explore Platforms
+            </a>
+            <Link className="button ghost" to="/about">
+              Meet the Team
+            </Link>
+          </div>
         </div>
       </section>
 
       <section id="platforms" className="section">
         <h2>Connected Platforms</h2>
-        <div className="grid">
+        <p className="muted section-intro">
+          Each platform is purpose-built for its industry. Click any card to explore features,
+          capabilities, and how it can be deployed for your operation.
+        </p>
+        <div className="grid top-space">
           {platformApps.map((app) => (
             <article key={app.name} className="card">
               <img className="card-image" src={app.image} alt={`${app.name} preview`} />
@@ -57,21 +73,13 @@ export function HomePage() {
               <p>{app.description}</p>
               <div className="actions">
                 <Link
-                  className="button ghost"
+                  className="button primary"
                   to={`/apps/${app.id ?? app.name.toLowerCase().replace(/\s+/g, '-')}`}
                 >
                   View Details
                 </Link>
-                <a className="button" href={app.url} target="_blank" rel="noreferrer">
+                <a className="button ghost" href={app.url} target="_blank" rel="noreferrer">
                   Open App
-                </a>
-                <a
-                  className="button ghost"
-                  href={app.marketplaceUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Marketplace
                 </a>
               </div>
             </article>
@@ -84,13 +92,10 @@ export function HomePage() {
         <p className="muted">
           These metrics are intentionally aggregated so internal records stay private.
         </p>
-        <p className="meta">
-          Source:{' '}
-          {metricsSource === 'api'
-            ? '4 app public APIs (HAES, HAPOS, HARE, Church-lib)'
-            : 'Local fallback data'}
-        </p>
-        <div className="stats">
+        {metricsSource !== 'api' ? null : (
+          <p className="meta">Source: 4 app public APIs (HAES, HAPOS, HARE, Church-lib)</p>
+        )}
+        <div className="stats top-space">
           {metrics.map((item) => (
             <article key={item.label} className="stat">
               <p className="stat-label">{item.label}</p>
