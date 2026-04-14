@@ -403,21 +403,7 @@ export const teamMembers = [
     role: 'Founder / Director',
     bio: 'Leads strategy and platform direction across all House Aurelius products.',
     image:'/images/Kelvin-aurelius.jpg',
-  },
-  {
-    name: 'Staff Profile 2',
-    role: 'Operations Lead',
-    bio: 'Coordinates implementation, onboarding, and support delivery.',
-    image:
-      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80',
-  },
-  {
-    name: 'Staff Profile 3',
-    role: 'Finance and Compliance',
-    bio: 'Oversees financial controls, reporting standards, and compliance workflows.',
-    image:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80',
-  },
+  }
 ]
 
 export const apkInfo = {
