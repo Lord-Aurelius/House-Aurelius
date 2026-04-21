@@ -1,3 +1,5 @@
+import { toGoogleDriveDownloadUrl } from '../utils/googleDrive'
+
 export const heroImage =
   'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1400&q=80'
 
@@ -10,6 +12,14 @@ export const platformApps = [
       'Complete school platform for student registration, academics, and financial records.',
     url: 'https://haes-v1.vercel.app',
     marketplaceUrl: 'https://haes-v1.vercel.app',
+    download: {
+      android: {
+        label: 'Android APK',
+        url: toGoogleDriveDownloadUrl(
+          'https://drive.google.com/file/d/1k2PyI_NO8DLTDAF5NtA5Y7iQn7rkfVxF/view?usp=drivesdk',
+        ),
+      },
+    },
     image:
       'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1000&q=80',
     overview:
@@ -98,6 +108,14 @@ export const platformApps = [
       'POS for African beauty shops, salons, and spas, with sales, expenses, payroll, and customer management.',
     url: 'https://hapos.vercel.app',
     marketplaceUrl: 'https://hapos.vercel.app',
+    download: {
+      android: {
+        label: 'Android APK',
+        url: toGoogleDriveDownloadUrl(
+          'https://drive.google.com/file/d/1CPpTkz2ssaVWs9Ev9bMu8oeRQOueCINH/view?usp=drivesdk',
+        ),
+      },
+    },
     image:
       'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=80',
     overview:
@@ -196,6 +214,14 @@ export const platformApps = [
       'Real estate platform for tenant registration, collections, expenses, and management.',
     url: 'https://hares.vercel.app',
     marketplaceUrl: 'https://hares.vercel.app',
+    download: {
+      android: {
+        label: 'Android APK',
+        url: toGoogleDriveDownloadUrl(
+          'https://drive.google.com/file/d/1K9VOKhJ8Ix5jb3tornTKePGAmkLHdEVo/view?usp=drivesdk',
+        ),
+      },
+    },
     image:
       'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80',
     overview:
@@ -294,6 +320,14 @@ export const platformApps = [
       'Church operations for newsletters, member registration, tithes, offerings, and media.',
     url: 'https://church-lib.vercel.app',
     marketplaceUrl: 'https://church-lib.vercel.app',
+    download: {
+      android: {
+        label: 'Android APK',
+        url: toGoogleDriveDownloadUrl(
+          'https://drive.google.com/file/d/1m9MgjzW0J6x0PGead_Z-DOM9EBnakUWa/view?usp=drivesdk',
+        ),
+      },
+    },
     image:
       'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1000&q=80',
     overview:
@@ -389,11 +423,123 @@ export const platformApps = [
       },
     },
   },
+  {
+    id: 'hifathi',
+    name: 'Hifathi',
+    fullName: 'Hifathi Personal Finance',
+    description:
+      'Personal finance platform for tracking income, expenses, money advice, and marketplace access.',
+    url: 'https://hifathi.vercel.app',
+    marketplaceUrl: 'https://hifathi.vercel.app',
+    download: {
+      android: {
+        label: 'Android APK',
+        url: toGoogleDriveDownloadUrl(
+          'https://drive.google.com/file/d/1ZVb6iK_HyRmc4lNefD4E_TDyxHLewtyu/view?usp=drivesdk',
+        ),
+      },
+    },
+    image:
+      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80',
+    overview:
+      'Hifathi gives individuals and households one place to track income, control expenses, receive practical money guidance, and participate in a marketplace built into the platform.',
+    modules: [
+      'Income tracking across salary, business, and side-hustle streams',
+      'Expense recording with category-level visibility and history',
+      'Money-management advice based on financial activity patterns',
+      'Budget awareness and spending summaries for day-to-day decisions',
+      'Built-in marketplace access for discovering and offering useful products and services',
+    ],
+    audience: [
+      'Individuals',
+      'Families',
+      'Side-hustle earners',
+      'Small traders',
+      'Budget-conscious households',
+    ],
+    landing: {
+      headline: 'Take Control of Income, Expenses, and Everyday Decisions',
+      subtext:
+        'Hifathi is a personal finance platform that helps users record what comes in, track what goes out, and receive practical advice for managing money with clarity. It keeps daily finances visible and usable.',
+      primaryCta: 'Open Hifathi',
+      secondaryCta: 'Explore Marketplace',
+      valueBlock:
+        'Hifathi replaces guesswork and scattered notes with one clear system for income tracking, expense control, and better money decisions. Users can understand their financial position quickly and act with confidence.',
+      capabilities: [
+        {
+          badge: 'IT',
+          title: 'Income Tracking',
+          text: 'Capture salary, business revenue, casual earnings, and other inflows in one organized view.',
+        },
+        {
+          badge: 'EX',
+          title: 'Expense Management',
+          text: 'Track spending by category so users can see where money goes and where pressure is building.',
+        },
+        {
+          badge: 'FA',
+          title: 'Financial Advice',
+          text: 'Offer users practical guidance on how to manage income, spending discipline, and everyday choices.',
+        },
+        {
+          badge: 'BD',
+          title: 'Budget Visibility',
+          text: 'Give a working picture of financial movement so users can plan better from week to week.',
+        },
+        {
+          badge: 'MP',
+          title: 'Marketplace Access',
+          text: 'Connect users to a marketplace experience within the platform for useful goods and services.',
+        },
+      ],
+      authority:
+        'Built for users who need discipline in personal finance without complexity. Hifathi helps people see patterns, control habits, and make better financial decisions from one connected system.',
+      highlights: [
+        'Track income and expenses without spreadsheets',
+        'See spending pressure before it becomes a problem',
+        'Get practical guidance and marketplace access in one platform',
+      ],
+      impactMetrics: [
+        { label: 'Money visibility', value: 'Daily income and expense clarity' },
+        { label: 'Decision quality', value: 'Advice tied to financial activity' },
+        { label: 'User convenience', value: 'Tracking and marketplace together' },
+      ],
+      conversion:
+        'Stop relying on memory to manage money. Use Hifathi to track movement, improve habits, and make better financial decisions with confidence.',
+      conversionCta: 'Start Using Hifathi',
+      gallery: [],
+      storyBlocks: [
+        {
+          title: 'Know What Comes In',
+          text: 'Users can record every income source in one place, making it easier to see how much money is actually available across the month.',
+          image:
+            'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'See Where It Goes',
+          text: 'Every expense can be categorized and reviewed, helping users understand daily habits and identify avoidable spending quickly.',
+          image:
+            'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Turn Tracking Into Better Decisions',
+          text: 'Because advice and marketplace access live inside the same platform, users can move from awareness to action without leaving the system.',
+          image:
+            'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1200&q=80',
+        },
+      ],
+      testimonial: {
+        quote:
+          'Before Hifathi, I only guessed how much I earned and spent each week. Now I can see my income, control my expenses, and make better decisions before money disappears.',
+        author: 'Early User, Nairobi',
+      },
+    },
+  },
 ]
 
 export const publicStats = [
-  { label: 'Platforms Connected', value: '4' },
-  { label: 'Business Verticals', value: 'Education, POS, Real Estate, Church' },
+  { label: 'Platforms Connected', value: '5' },
+  { label: 'Business Verticals', value: 'Education, POS, Real Estate, Church, Personal Finance' },
   { label: 'Public Data Policy', value: 'Aggregated metrics only' },
 ]
 
@@ -402,14 +548,6 @@ export const teamMembers = [
     name: 'Kelvin Aurelius',
     role: 'Founder / Director',
     bio: 'Leads strategy and platform direction across all House Aurelius products.',
-    image:'/images/Kelvin-aurelius.jpg',
-  }
+    image: '/images/Kelvin-aurelius.jpg',
+  },
 ]
-
-export const apkInfo = {
-  version: 'v1.0.0',
-  size: '4 MB',
-  releaseDate: 'Apr 13, 2026',
-  checksum: 'SHA256: replace-with-real-checksum',
-  url: 'https://drive.google.com/uc?export=download&id=1CCuaUOsRSg4-I6TxXiEIFqsW_EYBK0PO',
-}

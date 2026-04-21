@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { platformApps } from '../data/content'
 
