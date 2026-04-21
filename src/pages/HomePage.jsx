@@ -1,13 +1,15 @@
-import { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { platformApps, publicStats } from '../data/content'
 import { getPublicMetrics } from '../services/publicMetrics'
 
 function useReveal() {
   const ref = useRef(null)
+
   useEffect(() => {
     const el = ref.current
     if (!el) return
+
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -15,21 +17,20 @@ function useReveal() {
           obs.unobserve(el)
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     )
+
     obs.observe(el)
     return () => obs.disconnect()
   }, [])
+
   return ref
 }
 
-function RevealItem({ tag: Tag = 'div', className = '', style = {}, children }) {
+function RevealItem({ tag = 'div', className = '', style = {}, children }) {
   const ref = useReveal()
-  return (
-    <Tag ref={ref} className={`reveal ${className}`} style={style}>
-      {children}
-    </Tag>
-  )
+
+  return React.createElement(tag, { ref, className: `reveal ${className}`, style }, children)
 }
 
 export function HomePage() {
@@ -38,14 +39,19 @@ export function HomePage() {
 
   useEffect(() => {
     let active = true
+
     async function loadPublicMetrics() {
       const result = await getPublicMetrics()
       if (!active) return
       setMetrics(result.metrics)
       setMetricsSource(result.source)
     }
+
     loadPublicMetrics()
-    return () => { active = false }
+
+    return () => {
+      active = false
+    }
   }, [])
 
   return (
@@ -66,8 +72,9 @@ export function HomePage() {
             <span className="hero-title-accent">Technologies</span>
           </h1>
           <p className="intro">
-            One gateway to HAES, HAPOS, HARE, and Church-lib — purpose-built platforms
-            for schools, salons, property, and ministry across Africa.
+            One gateway to HAES, HAPOS, HARE, Church-lib, and Hifathi - purpose-built
+            platforms for schools, salons, property, ministry, and personal finance across
+            Africa.
           </p>
           <div className="actions center">
             <a className="button primary" href="#platforms">
@@ -123,7 +130,7 @@ export function HomePage() {
             These metrics are intentionally aggregated so internal records stay private.
           </p>
           {metricsSource !== 'api' ? null : (
-            <p className="meta">Source: 4 app public APIs (HAES, HAPOS, HARE, Church-lib)</p>
+            <p className="meta">Source: connected public app APIs</p>
           )}
         </RevealItem>
         <div className="stats top-space">

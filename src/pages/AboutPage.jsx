@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { teamMembers } from '../data/content'
 
 function useReveal() {
@@ -21,13 +21,9 @@ function useReveal() {
   return ref
 }
 
-function RevealItem({ tag: Tag = 'div', className = '', style = {}, children }) {
+function RevealItem({ tag = 'div', className = '', style = {}, children }) {
   const ref = useReveal()
-  return (
-    <Tag ref={ref} className={`reveal ${className}`} style={style}>
-      {children}
-    </Tag>
-  )
+  return React.createElement(tag, { ref, className: `reveal ${className}`, style }, children)
 }
 
 export function AboutPage() {
