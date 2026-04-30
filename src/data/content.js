@@ -535,11 +535,133 @@ export const platformApps = [
       },
     },
   },
+  {
+    id: 'mkulima',
+    name: 'Mkulima',
+    fullName: 'Mkulima Farm Management',
+    description:
+      'Farm management platform for produce records, livestock output, worker logs, payroll, QR care tracking, newsletters, duties, and farmer marketplace access.',
+    url: 'https://mkulima-three.vercel.app',
+    marketplaceUrl: 'https://mkulima-three.vercel.app',
+    download: {
+      android: {
+        label: 'Android APK',
+        url: toGoogleDriveDownloadUrl(
+          'https://drive.google.com/file/d/1It0ZXCkDi_2BToHEK4xX3T1oyJrQaYfX/view?usp=drivesdk',
+        ),
+      },
+    },
+    image:
+      'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1000&q=80',
+    overview:
+      'Mkulima helps farm owners and managers run produce records, livestock tracking, worker logs, payroll, duty assignment, QR-based care routines, newsletters, and farmer marketplace activity from one connected system.',
+    modules: [
+      'Produce records for harvests, inventory, and farm output',
+      'Livestock counts, health notes, and output tracking',
+      'QR-based care tracking for animals and plants',
+      'Worker daily logs, duty assignment, and task follow-up',
+      'Payroll tracking for permanent and casual farm workers',
+      'Worker education through newsletters and farm updates',
+      'Marketplace access for farmers, produce, inputs, and services',
+    ],
+    audience: [
+      'Farm owners',
+      'Farm managers',
+      'Livestock supervisors',
+      'Field team leads',
+      'Farm accountants',
+    ],
+    landing: {
+      headline: 'Run Your Farm Records, Workers, and Output From One System',
+      subtext:
+        'Mkulima is built for farm owners and managers who need clear control over produce, animals, workers, payroll, duties, and daily care routines. QR technology helps every animal and plant care task stay traceable.',
+      primaryCta: 'Open Mkulima',
+      secondaryCta: 'Explore Marketplace',
+      valueBlock:
+        'Mkulima replaces farm notebooks, scattered spreadsheets, and verbal follow-ups with one operating system for the farm. Owners can see what was produced, which animals were cared for, who worked, what is owed, and what needs attention next.',
+      capabilities: [
+        {
+          badge: 'PR',
+          title: 'Produce Records',
+          text: 'Track harvests, crop output, stock movement, and farm production history in one organized place.',
+        },
+        {
+          badge: 'LO',
+          title: 'Livestock Output',
+          text: 'Monitor animal counts, care notes, milk, eggs, weight, and other farm output tied to each livestock group.',
+        },
+        {
+          badge: 'QR',
+          title: 'QR Care Tracking',
+          text: 'Use QR codes to confirm daily care routines for animals and plants, creating accountability across the farm.',
+        },
+        {
+          badge: 'WL',
+          title: 'Worker Logs',
+          text: 'Record daily worker attendance, assigned duties, completed work, and field activity without paper registers.',
+        },
+        {
+          badge: 'PY',
+          title: 'Payroll Control',
+          text: 'Handle permanent and casual worker payroll with clearer records of days worked, duties completed, and pay due.',
+        },
+        {
+          badge: 'MP',
+          title: 'Farmer Marketplace',
+          text: 'Connect farm owners and managers to a marketplace for produce, inputs, services, and farmer-to-farmer trade.',
+        },
+      ],
+      authority:
+        'Built for farms where daily discipline matters. Mkulima gives owners and managers traceability across people, crops, animals, money, and market activity without slowing down field work.',
+      highlights: [
+        'Track produce, livestock, workers, payroll, and duties from one dashboard',
+        'Use QR codes to verify animal and plant care routines',
+        'Educate workers through newsletters while connecting farmers to a marketplace',
+      ],
+      impactMetrics: [
+        { label: 'Farm visibility', value: 'Produce, animals, and workers in one view' },
+        { label: 'Care accountability', value: 'QR-tracked daily routines' },
+        { label: 'Payroll clarity', value: 'Work logs tied to pay records' },
+      ],
+      conversion:
+        'Stop running farm operations from memory, notebooks, and disconnected chats. Bring your farm records, workers, care routines, and market access into one structured platform.',
+      conversionCta: 'Start Managing With Mkulima',
+      gallery: [],
+      storyBlocks: [
+        {
+          title: 'Produce Records That Stay Usable',
+          text: 'Farm managers can record crop output, harvest movement, and produce history as work happens, giving owners a clearer picture of what the farm is producing.',
+          image:
+            'https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Animal Care With QR Accountability',
+          text: 'Each daily care task can be connected to a QR-based workflow, helping supervisors confirm that animals and plants received the right attention at the right time.',
+          image:
+            'https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Workers, Payroll, and Duties in Sync',
+          text: 'Daily logs, assigned duties, payroll records, and worker newsletters live in the same platform so field teams stay coordinated and owners can review operations quickly.',
+          image:
+            'https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1200&q=80',
+        },
+      ],
+      testimonial: {
+        quote:
+          'Before Mkulima, farm records lived in notebooks and worker updates came through calls. Now produce, animals, duties, and payroll are visible from one place.',
+        author: 'Farm Manager, East Africa',
+      },
+    },
+  },
 ]
 
 export const publicStats = [
-  { label: 'Platforms Connected', value: '5' },
-  { label: 'Business Verticals', value: 'Education, POS, Real Estate, Church, Personal Finance' },
+  { label: 'Platforms Connected', value: '6' },
+  {
+    label: 'Business Verticals',
+    value: 'Education, POS, Real Estate, Church, Personal Finance, Agriculture',
+  },
   { label: 'Public Data Policy', value: 'Aggregated metrics only' },
 ]
 

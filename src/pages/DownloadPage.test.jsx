@@ -18,6 +18,7 @@ describe('DownloadPage', () => {
     expect(screen.getByRole('tab', { name: 'HARE' })).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'Church-lib' })).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'Hifathi' })).toBeInTheDocument()
+    expect(screen.getByRole('tab', { name: 'Mkulima' })).toBeInTheDocument()
   })
 
   it('switches the active panel when a platform tab is clicked', async () => {
@@ -37,6 +38,25 @@ describe('DownloadPage', () => {
     expect(screen.getByRole('link', { name: /Download Android APK/i })).toHaveAttribute(
       'href',
       'https://drive.google.com/uc?export=download&id=1ZVb6iK_HyRmc4lNefD4E_TDyxHLewtyu',
+    )
+  })
+
+  it('shows the Mkulima Android download when the Mkulima tab is selected', async () => {
+    const user = userEvent.setup()
+
+    render(
+      <MemoryRouter>
+        <DownloadPage />
+      </MemoryRouter>,
+    )
+
+    await user.click(screen.getByRole('tab', { name: 'Mkulima' }))
+
+    expect(screen.getByRole('heading', { level: 2, name: 'Mkulima Farm Management' }))
+      .toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /Download Android APK/i })).toHaveAttribute(
+      'href',
+      'https://drive.google.com/uc?export=download&id=1It0ZXCkDi_2BToHEK4xX3T1oyJrQaYfX',
     )
   })
 })
