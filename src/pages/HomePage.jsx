@@ -3,147 +3,159 @@ import { Link } from 'react-router-dom'
 import { platformApps, publicStats } from '../data/content'
 import { getPublicMetrics } from '../services/publicMetrics'
 
-function useReveal() {
+/* Scroll reveal hook */
+function useReveal(options = {}) {
   const ref = useRef(null)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const el = ref.current
     if (!el) return
 
-    const obs = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.classList.add('is-visible')
-          obs.unobserve(el)
+          setIsVisible(true)
+          observer.unobserve(el)
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1, ...options }
     )
 
-    obs.observe(el)
-    return () => obs.disconnect()
-  }, [])
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [options])
 
-  return ref
+  return [ref, isVisible]
 }
 
-function RevealItem({ tag = 'div', className = '', style = {}, children }) {
-  const ref = useReveal()
-
-  return React.createElement(tag, { ref, className: `reveal ${className}`, style }, children)
+/* Platform Card Component */
+function PlatformCard({ app, index }) {
+  const [ref, isVisible] = useReveal()
+  
+  return (
+    <article 
+      ref={ref} 
+      className={`platform-card ${isVisible ? 'is-visible' : ''}`}
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      <img 
+        className="platform-card-image" 
+        src={app.image} 
+        alt={`${app.name} preview`}
+        loading="lazy"
+      />
+      <p className="platform-card-tag">{app.name}</p>
+      <h3 className="platform-card-title">{app.fullName}</h3>
+      <p className="platform-card-desc">{app.description}</p>
+      <div className="platform-card-actions">
+        <Link className="button button-ghost" to={`/apps/${app.id ?? app.name.toLowerCase().replace(/\s+/g, '-')}`}>
+          View Details
+        </Link>
+        <a className="button button-primary" href={app.url} target="_blank" rel="noreferrer">
+          Open App →
+        </a>
+      </div>
+    </article>
+  )
 }
 
+/* Stat Component */
+function StatItem({ item, index }) {
+  const [ref, isVisible] = useReveal()
+  
+  return (
+    <article 
+      ref={ref}
+      className={`stat-item ${isVisible ? 'is-visible' : ''}`}
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      <p className="stat-label">{item.label}</p>
+      <p className="stat-value">{item.value}</p>
+    </article>
+  )
+}
+
+/* Main Home Page */
 export function HomePage() {
   const [metrics, setMetrics] = useState(publicStats)
   const [metricsSource, setMetricsSource] = useState('fallback')
 
   useEffect(() => {
     let active = true
-
     async function loadPublicMetrics() {
       const result = await getPublicMetrics()
       if (!active) return
       setMetrics(result.metrics)
       setMetricsSource(result.source)
     }
-
     loadPublicMetrics()
-
-    return () => {
-      active = false
-    }
+    return () => { active = false }
   }, [])
+
+  const [heroRef, heroVisible] = useReveal({ threshold: 0.1 })
+  const [platformsRef, platformsVisible] = useReveal({ threshold: 0.1 })
+  const [statsRef, statsVisible] = useReveal({ threshold: 0.1 })
 
   return (
     <>
-      <section className="hero">
-        <div className="hero-image-wrap">
-          <img
-            className="hero-image"
-            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1400&q=80"
-            alt="African professionals working with technology"
-          />
-          <div className="hero-image-overlay" />
-        </div>
+      {/* Hero Section */}
+      <section ref={heroRef} className={`hero ${heroVisible ? 'is-visible' : ''}`}>
+        <div className="hero-bg" />
         <div className="hero-content">
-          <p className="eyebrow">Unified Business Platform</p>
+          <p className="hero-eyebrow">Unified Business Platform</p>
           <h1 className="hero-title">
-            <span className="hero-title-line">House Aurelius</span>
+            House Aurelius
             <span className="hero-title-accent">Technologies</span>
           </h1>
-          <p className="intro">
-            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, and Mkulima -
+          <p className="hero-intro">
+            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, and Mkulima —
             purpose-built platforms for schools, salons, property, ministry, personal finance,
             and agriculture across Africa.
           </p>
-          <div className="actions center">
-            <a className="button primary" href="#platforms">
+          <div className="hero-actions">
+            <a className="button button-primary" href="#platforms">
               Explore Platforms
             </a>
-            <Link className="button ghost" to="/about">
+            <Link className="button button-ghost" to="/about">
               Meet the Team
             </Link>
           </div>
         </div>
       </section>
 
+      {/* Platforms Section */}
       <section id="platforms" className="section">
-        <RevealItem tag="div">
-          <h2>Connected Platforms</h2>
-          <p className="muted section-intro">
+        <div className="section-header">
+          <h2 className="section-title">Connected Platforms</h2>
+          <p className="section-intro">
             Each platform is purpose-built for its industry. Click any card to explore features,
             capabilities, and how it can be deployed for your operation.
           </p>
-        </RevealItem>
-        <div className="grid top-space">
+        </div>
+        <div className="platforms-grid">
           {platformApps.map((app, i) => (
-            <RevealItem
-              tag="article"
-              key={app.name}
-              className="card"
-              style={{ transitionDelay: `${i * 0.08}s` }}
-            >
-              <img className="card-image" src={app.image} alt={`${app.name} preview`} />
-              <p className="tag">{app.name}</p>
-              <h3>{app.fullName}</h3>
-              <p>{app.description}</p>
-              <div className="actions">
-                <Link
-                  className="button primary"
-                  to={`/apps/${app.id ?? app.name.toLowerCase().replace(/\s+/g, '-')}`}
-                >
-                  View Details
-                </Link>
-                <a className="button ghost" href={app.url} target="_blank" rel="noreferrer">
-                  Open App
-                </a>
-              </div>
-            </RevealItem>
+            <PlatformCard key={app.name} app={app} index={i} />
           ))}
         </div>
       </section>
 
+      {/* Stats Section */}
       <section className="section">
-        <RevealItem tag="div">
-          <h2>Public Dashboard Snapshot</h2>
-          <p className="muted">
+        <div className="section-header">
+          <h2 className="section-title">Public Dashboard Snapshot</h2>
+          <p className="section-intro">
             These metrics are intentionally aggregated so internal records stay private.
           </p>
           {metricsSource !== 'api' ? null : (
-            <p className="meta">Source: connected public app APIs</p>
+            <p className="section-intro" style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              Source: connected public app APIs
+            </p>
           )}
-        </RevealItem>
-        <div className="stats top-space">
+        </div>
+        <div className="stats-grid">
           {metrics.map((item, i) => (
-            <RevealItem
-              tag="article"
-              key={item.label}
-              className="stat"
-              style={{ transitionDelay: `${i * 0.1}s` }}
-            >
-              <p className="stat-label">{item.label}</p>
-              <p className="stat-value">{item.value}</p>
-            </RevealItem>
+            <StatItem key={item.label} item={item} index={i} />
           ))}
         </div>
       </section>

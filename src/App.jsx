@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import './App.css'
+import './styles/new-landing.css'
 import { SiteLayout } from './components/SiteLayout'
 import { AboutPage } from './pages/AboutPage'
 import { AppDetailPage } from './pages/AppDetailPage'
