@@ -256,11 +256,16 @@
 /* ─── Sections ───────────────────────────── */
 .section {
   margin-top: 2.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(243, 204, 107, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
 }
 
 .section-intro {
   margin-top: 0.4rem;
   max-width: 640px;
+  color: #c8b0e8;
 }
 
 .grid,
@@ -286,24 +291,25 @@
 .card,
 .member-card,
 .stat {
-  border: 1px solid #dcc3f2;
+  border: 1px solid rgba(243, 204, 107, 0.3);
   border-radius: 14px;
   padding: 1.1rem;
-  background: #ffffff;
-  box-shadow: 0 4px 16px rgba(76, 29, 114, 0.07);
-  transition: box-shadow 0.2s, transform 0.2s;
+  background: linear-gradient(145deg, #1a0a30, #2a1048);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
 }
 
 .card:hover {
-  box-shadow: 0 8px 28px rgba(76, 29, 114, 0.14);
+  box-shadow: 0 8px 28px rgba(243, 204, 107, 0.15);
   transform: translateY(-2px);
+  border-color: #f3cc6b;
 }
 
 .tag {
   font-size: 0.75rem;
   font-weight: 800;
   margin-bottom: 0.4rem;
-  color: #6f24a7;
+  color: #f3cc6b;
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
@@ -316,9 +322,9 @@
   object-position: center 20%;
   border-radius: 10px;
   margin-bottom: 0.85rem;
-  border: 1px solid #ecd69d;
+  border: 1px solid rgba(243, 204, 107, 0.4);
   display: block;
-  background: #f0e8ff;
+  background: #0f0817;
 }
 
 /* ─── Buttons ────────────────────────────── */
@@ -377,11 +383,11 @@
 
 /* ─── Text helpers ───────────────────────── */
 .muted {
-  color: #5d4a73;
+  color: #a89aba;
 }
 
 .meta {
-  color: #6f5a84;
+  color: #8f7aaa;
   font-size: 0.88rem;
   margin-top: 0.4rem;
 }
@@ -389,7 +395,7 @@
 /* ─── Stats ──────────────────────────────── */
 .stat-label {
   font-size: 0.82rem;
-  color: #745a8f;
+  color: #f3cc6b;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -397,7 +403,7 @@
 .stat-value {
   font-size: 1.05rem;
   font-weight: 700;
-  color: #3a165f;
+  color: #ffffff;
   margin-top: 0.3rem;
 }
 

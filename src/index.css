@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f6f2ff;
-  color: #2a1144;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f0817;
+  color: #e8daf7;
 }
 
 h1,
@@ -17,18 +19,22 @@ p {
 }
 
 h1 {
+  font-family: 'Cinzel', serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 h2 {
+  font-family: 'Cinzel', serif;
   margin-bottom: 0.75rem;
-  color: #34125a;
+  color: #f3cc6b;
 }
 
 h3 {
+  font-family: 'Cinzel', serif;
   margin-bottom: 0.5rem;
-  color: #4a1d72;
+  color: #ffffff;
 }
 
 p {
