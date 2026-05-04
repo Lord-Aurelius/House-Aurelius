@@ -37,7 +37,7 @@ function PlatformCard({ app, index }) {
     <article 
       ref={ref} 
       className={`platform-card ${isVisible ? 'is-visible' : ''}`}
-      style={{ animationDelay: `${index * 0.1}s` }}
+      style={{ animationDelay: `${index * 0.15}s` }}
     >
       <img 
         className="platform-card-image" 
@@ -45,16 +45,18 @@ function PlatformCard({ app, index }) {
         alt={`${app.name} preview`}
         loading="lazy"
       />
-      <p className="platform-card-tag">{app.name}</p>
-      <h3 className="platform-card-title">{app.fullName}</h3>
-      <p className="platform-card-desc">{app.description}</p>
-      <div className="platform-card-actions">
-        <Link className="button button-ghost" to={`/apps/${app.id ?? app.name.toLowerCase().replace(/\s+/g, '-')}`}>
-          View Details
-        </Link>
-        <a className="button button-primary" href={app.url} target="_blank" rel="noreferrer">
-          Open App →
-        </a>
+      <div className="platform-card-content">
+        <p className="platform-card-tag">{app.name}</p>
+        <h3 className="platform-card-title">{app.fullName}</h3>
+        <p className="platform-card-desc">{app.description}</p>
+        <div className="platform-card-actions">
+          <Link className="button button-ghost" to={`/apps/${app.id ?? app.name.toLowerCase().replace(/\s+/g, '-')}`}>
+            View Details
+          </Link>
+          <a className="button button-primary" href={app.url} target="_blank" rel="noreferrer">
+            Open App →
+          </a>
+        </div>
       </div>
     </article>
   )
