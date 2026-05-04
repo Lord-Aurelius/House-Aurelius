@@ -140,6 +140,19 @@ h3 {
   letter-spacing: 0.02em;
 }
 
+.brand-sun {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: var(--gold);
+  animation: spin 12s linear infinite;
+  line-height: 1;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .brand-subtitle {
   font-size: 0.7rem;
   color: var(--text-muted);
