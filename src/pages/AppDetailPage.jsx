@@ -12,6 +12,11 @@ export function AppDetailPage() {
     (item) => item.id === appId || toSlug(item.name) === appId || toSlug(item.fullName) === appId,
   )
 
+  // Find next/prev platform for navigation
+  const currentIndex = platformApps.findIndex(p => p.id === app?.id)
+  const prevApp = currentIndex > 0 ? platformApps[currentIndex - 1] : null
+  const nextApp = currentIndex < platformApps.length - 1 ? platformApps[currentIndex + 1] : null
+
   useEffect(() => {
     const targets = document.querySelectorAll('.reveal')
     if (!targets.length) {
@@ -41,9 +46,22 @@ export function AppDetailPage() {
 
   return (
     <section className="section">
-      <Link className="button ghost" to="/">
-        Back to Dashboard
-      </Link>
+      <nav className="platform-nav">
+        <Link className="button ghost" to="/">
+          ← Dashboard
+        </Link>
+        {prevApp && (
+          <Link className="button ghost" to={`/apps/${prevApp.id}`}>
+            ← {prevApp.name}
+          </Link>
+        )}
+        <span className="platform-nav-current">{app.name}</span>
+        {nextApp && (
+          <Link className="button ghost" to={`/apps/${nextApp.id}`}>
+            {nextApp.name} →
+          </Link>
+        )}
+      </nav>
 
       <article className="app-detail top-space">
         <img className="app-detail-image" src={app.image} alt={`${app.name} overview`} />
