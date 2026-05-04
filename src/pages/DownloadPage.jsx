@@ -43,26 +43,33 @@ export function DownloadPage() {
       </div>
 
       <div className="download-card">
-        <p className="tag">{activeApp.name}</p>
-        <h2>{activeApp.fullName}</h2>
-        <p className="muted">{activeApp.description}</p>
+        <img 
+          className="download-card-image" 
+          src={activeApp.image} 
+          alt={`${activeApp.name} preview`}
+        />
+        <div className="download-card-content">
+          <p className="tag">{activeApp.name}</p>
+          <h2>{activeApp.fullName}</h2>
+          <p className="muted">{activeApp.description}</p>
 
-        <div className="download-meta">
-          <p>
-            <strong>Available build:</strong> {activeApp.download.android.label}
-          </p>
-          <p>
-            <strong>Platform:</strong> Android
-          </p>
-          <p>
-            <strong>Website:</strong>{' '}
-            <a href={activeApp.url} target="_blank" rel="noreferrer">
-              {activeApp.url}
-            </a>
-          </p>
-          <p>
-            <strong>Access:</strong> More installers can be added here as each platform expands.
-          </p>
+          <div className="download-meta">
+            <p>
+              <strong>Available build:</strong> {activeApp.download.android.label}
+            </p>
+            <p>
+              <strong>Platform:</strong> Android
+            </p>
+            <p>
+              <strong>Website:</strong>{' '}
+              <a href={activeApp.url} target="_blank" rel="noreferrer">
+                {activeApp.url}
+              </a>
+            </p>
+            <p>
+              <strong>Access:</strong> More installers can be added here as each platform expands.
+            </p>
+          </div>
         </div>
       </div>
 
