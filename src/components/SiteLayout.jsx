@@ -13,7 +13,7 @@ export function SiteLayout() {
       <header className="site-header">
         <div className="brand-wrap">
           <p className="brand">
-            <img src="/brand-sun.png" alt="☀" className="brand-logo" />
+            <span className="brand-sun">☀</span>
             House Aurelius
           </p>
           <p className="brand-subtitle">Securely connecting your business platforms</p>
@@ -37,10 +37,7 @@ export function SiteLayout() {
       </main>
 
       <footer className="footer">
-        <p className="footer-brand">
-          <img src="/brand-sun.png" alt="☀" className="footer-logo" />
-          House Aurelius
-        </p>
+        <p className="footer-brand">☀ House Aurelius</p>
         <p className="footer-contact">
           <a href="mailto:theaureliushouse@gmail.com">theaureliushouse@gmail.com</a>
           {' · '}

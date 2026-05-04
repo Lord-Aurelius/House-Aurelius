@@ -144,15 +144,12 @@ h3 {
   display: inline-block;
   font-size: 1.5rem;
   color: var(--gold);
-  animation: none;
+  animation: spin 12s linear infinite;
   line-height: 1;
 }
 
 .brand-logo {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  animation: spin 12s linear infinite;
+  display: none;
 }
 
 @keyframes spin {
@@ -986,17 +983,6 @@ h3 {
   font-weight: 600;
   color: var(--gold);
   margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-logo {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  vertical-align: middle;
-  margin-right: 0.35rem;
 }
 
 .footer-contact {
