@@ -19,6 +19,7 @@ describe('DownloadPage', () => {
     expect(screen.getByRole('tab', { name: 'Church-lib' })).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'Hifathi' })).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'Mkulima' })).toBeInTheDocument()
+    expect(screen.queryByRole('tab', { name: 'PIOS' })).not.toBeInTheDocument()
   })
 
   it('switches the active panel when a platform tab is clicked', async () => {

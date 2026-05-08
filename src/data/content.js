@@ -654,13 +654,137 @@ export const platformApps = [
       },
     },
   },
+  {
+    id: 'pios',
+    name: 'PIOS',
+    fullName: 'PIOS Political Intelligence & Operations System',
+    description:
+      'Political analysis and campaign-management platform for staff data control, media, communications, AI analytics, surveys, IEBC data uploads, GIS political maps, and candidate visit tracking.',
+    url: 'https://pios-three.vercel.app',
+    marketplaceUrl: 'https://pios-three.vercel.app',
+    image:
+      'https://images.unsplash.com/photo-1541872705-1f73c6400ec9?auto=format&fit=crop&w=1000&q=80',
+    overview:
+      'PIOS supports campaign teams with secure staff access, political data control, media and communication workflows, AI analytics, surveys, IEBC data imports, GIS political mapping, candidate visit records, and targeted mass communication follow-up.',
+    modules: [
+      'Campaign staff login and role-based data control',
+      'Media asset management for campaign messaging and publicity',
+      'Communication management for supporters, teams, and field networks',
+      'AI analytics for voter, ward, and campaign intelligence',
+      'Survey creation, response capture, and reporting',
+      'IEBC data uploads for GIS political mapping',
+      'Candidate visit tracking with people met and follow-up records',
+      'Mass communication lists built from visits, surveys, and campaign segments',
+    ],
+    audience: [
+      'Candidates',
+      'Campaign managers',
+      'Political analysts',
+      'Communications teams',
+      'Field coordinators',
+      'Campaign data officers',
+    ],
+    landing: {
+      headline: 'Turn Campaign Data Into Political Ground Intelligence',
+      subtext:
+        'PIOS gives campaign teams one command center for staff access, media, communication, AI analytics, surveys, IEBC data uploads, GIS political maps, and candidate visit follow-up. It helps teams understand the ground and act faster.',
+      primaryCta: 'Open PIOS',
+      secondaryCta: 'Explore Campaign Intelligence',
+      valueBlock:
+        'PIOS replaces scattered campaign files, disconnected field notes, and delayed political reports with a controlled operating system for campaign intelligence. Teams can map political areas, manage staff access, record candidate activity, and prepare targeted communication from one platform.',
+      capabilities: [
+        {
+          badge: 'CI',
+          title: 'Campaign Intelligence',
+          text: 'Centralize campaign activity, field records, political insights, and constituency-level planning in one operating view.',
+        },
+        {
+          badge: 'SD',
+          title: 'Staff Data Control',
+          text: 'Give staff secure login access while keeping campaign data organized, permissioned, and accountable.',
+        },
+        {
+          badge: 'MM',
+          title: 'Media Management',
+          text: 'Manage campaign media, publicity assets, communication material, and message coordination from one workspace.',
+        },
+        {
+          badge: 'CM',
+          title: 'Communication Management',
+          text: 'Prepare supporter outreach, staff communication, and later mass messaging based on real campaign records.',
+        },
+        {
+          badge: 'AI',
+          title: 'AI Analytics',
+          text: 'Use AI-supported analysis to interpret campaign patterns, survey results, field signals, and political opportunities.',
+        },
+        {
+          badge: 'SV',
+          title: 'Survey Operations',
+          text: 'Conduct surveys, capture responses, and turn public feedback into practical campaign intelligence.',
+        },
+        {
+          badge: 'GIS',
+          title: 'GIS Political Mapping',
+          text: 'Upload IEBC data and generate GIS political maps for area analysis, planning, and ground coordination.',
+        },
+        {
+          badge: 'VT',
+          title: 'Candidate Visit Tracking',
+          text: 'Mark candidate visits, record people met, and preserve those contacts for structured follow-up communication.',
+        },
+      ],
+      authority:
+        'Built for campaigns that need discipline, speed, and traceability. PIOS connects political data, field movement, communication, media, and AI analysis so teams can move from information to action without losing control.',
+      highlights: [
+        'Generate GIS political maps from IEBC data uploads',
+        'Track candidate visits and record people met for later communication',
+        'Use AI analytics, surveys, media, and staff control in one campaign system',
+      ],
+      impactMetrics: [
+        { label: 'Ground intelligence', value: 'GIS maps and ward-level visibility' },
+        { label: 'Campaign follow-up', value: 'Visits linked to contact records' },
+        { label: 'Decision speed', value: 'AI-assisted campaign analysis' },
+      ],
+      conversion:
+        'Stop managing campaigns from disconnected chats, spreadsheets, and memory. Bring political analysis, mapping, surveys, visits, media, and communication into one structured system.',
+      conversionCta: 'Open PIOS Campaign Command',
+      gallery: [],
+      storyBlocks: [
+        {
+          title: 'From IEBC Data to GIS Political Maps',
+          text: 'Campaign teams can upload IEBC data and convert it into practical political maps for area analysis, constituency planning, and ground strategy.',
+          image:
+            'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'Candidate Visits Become Follow-Up Lists',
+          text: 'Every candidate visit can be marked, recorded, and connected to the people met, making later communication more structured and more targeted.',
+          image:
+            'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80',
+        },
+        {
+          title: 'AI Analytics for Campaign Decisions',
+          text: 'Survey results, field updates, media activity, and campaign records can feed AI-assisted analytics so teams can understand patterns before acting.',
+          image:
+            'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+        },
+      ],
+      testimonial: {
+        quote:
+          'PIOS gives a campaign team one place to see the map, the data, the candidate movement, and the people to contact next.',
+        author: 'Campaign Strategy Team',
+      },
+    },
+  },
 ]
 
 export const publicStats = [
-  { label: 'Platforms Connected', value: '6' },
+  { label: 'Platforms Connected', value: '7' },
   {
     label: 'Business Verticals',
-    value: 'Education, POS, Real Estate, Church, Personal Finance, Agriculture',
+    value:
+      'Education, POS, Real Estate, Church, Personal Finance, Agriculture, Political Analytics',
   },
   { label: 'Public Data Policy', value: 'Aggregated metrics only' },
 ]

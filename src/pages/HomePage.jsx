@@ -72,9 +72,9 @@ export function HomePage() {
             <span className="hero-title-accent">Technologies</span>
           </h1>
           <p className="intro">
-            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, and Mkulima -
+            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, Mkulima, and PIOS -
             purpose-built platforms for schools, salons, property, ministry, personal finance,
-            and agriculture across Africa.
+            agriculture, and political campaign intelligence across Africa.
           </p>
           <div className="actions center">
             <a className="button primary" href="#platforms">
