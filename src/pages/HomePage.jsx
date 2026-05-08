@@ -19,7 +19,7 @@ function useReveal(options = {}) {
           observer.unobserve(el)
         }
       },
-      { threshold: 0.1, ...options }
+      { threshold: 0.1, ...options },
     )
 
     observer.observe(el)
@@ -32,16 +32,16 @@ function useReveal(options = {}) {
 /* Platform Card Component */
 function PlatformCard({ app, index }) {
   const [ref, isVisible] = useReveal()
-  
+
   return (
-    <article 
-      ref={ref} 
+    <article
+      ref={ref}
       className={`platform-card ${isVisible ? 'is-visible' : ''}`}
       style={{ animationDelay: `${index * 0.15}s` }}
     >
-      <img 
-        className="platform-card-image" 
-        src={app.image} 
+      <img
+        className="platform-card-image"
+        src={app.image}
         alt={`${app.name} preview`}
         loading="lazy"
       />
@@ -50,11 +50,14 @@ function PlatformCard({ app, index }) {
         <h3 className="platform-card-title">{app.fullName}</h3>
         <p className="platform-card-desc">{app.description}</p>
         <div className="platform-card-actions">
-          <Link className="button button-ghost" to={`/apps/${app.id ?? app.name.toLowerCase().replace(/\s+/g, '-')}`}>
+          <Link
+            className="button button-ghost"
+            to={`/apps/${app.id ?? app.name.toLowerCase().replace(/\s+/g, '-')}`}
+          >
             View Details
           </Link>
           <a className="button button-primary" href={app.url} target="_blank" rel="noreferrer">
-            Open App →
+            Open App
           </a>
         </div>
       </div>
@@ -65,9 +68,9 @@ function PlatformCard({ app, index }) {
 /* Stat Component */
 function StatItem({ item, index }) {
   const [ref, isVisible] = useReveal()
-  
+
   return (
-    <article 
+    <article
       ref={ref}
       className={`stat-item ${isVisible ? 'is-visible' : ''}`}
       style={{ animationDelay: `${index * 0.1}s` }}
@@ -92,12 +95,12 @@ export function HomePage() {
       setMetricsSource(result.source)
     }
     loadPublicMetrics()
-    return () => { active = false }
+    return () => {
+      active = false
+    }
   }, [])
 
   const [heroRef, heroVisible] = useReveal({ threshold: 0.1 })
-  const [platformsRef, platformsVisible] = useReveal({ threshold: 0.1 })
-  const [statsRef, statsVisible] = useReveal({ threshold: 0.1 })
 
   return (
     <>
@@ -110,10 +113,8 @@ export function HomePage() {
             House Aurelius
             <span className="hero-title-accent">Technologies</span>
           </h1>
-          <p className="intro">
-            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, Mkulima, and PIOS -
           <p className="hero-intro">
-            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, and Mkulima —
+            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, Mkulima, and PIOS -
             purpose-built platforms for schools, salons, property, ministry, personal finance,
             agriculture, and political campaign intelligence across Africa.
           </p>
