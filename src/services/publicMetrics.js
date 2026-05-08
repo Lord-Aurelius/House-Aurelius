@@ -8,6 +8,7 @@ const API_SOURCES = [
   { key: 'CHURCH_LIB', baseUrl: import.meta.env.VITE_CHURCH_LIB_PUBLIC_API_BASE_URL },
   { key: 'HIFATHI', baseUrl: import.meta.env.VITE_HIFATHI_PUBLIC_API_BASE_URL },
   { key: 'MKULIMA', baseUrl: import.meta.env.VITE_MKULIMA_PUBLIC_API_BASE_URL },
+  { key: 'PIOS', baseUrl: import.meta.env.VITE_PIOS_PUBLIC_API_BASE_URL },
 ]
 
 function normalizeMetrics(payload) {

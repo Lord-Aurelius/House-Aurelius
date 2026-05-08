@@ -43,4 +43,27 @@ describe('AppDetailPage', () => {
       expect(link).toHaveAttribute('href', 'https://mkulima-three.vercel.app')
     })
   })
+
+  it('renders the PIOS detail page from the shared platform route', () => {
+    render(
+      <MemoryRouter initialEntries={['/apps/pios']}>
+        <Routes>
+          <Route path="/apps/:appId" element={<AppDetailPage />} />
+        </Routes>
+      </MemoryRouter>,
+    )
+
+    expect(
+      screen.getByRole('heading', {
+        level: 1,
+        name: 'PIOS Political Intelligence & Operations System',
+      }),
+    ).toBeInTheDocument()
+    expect(screen.getAllByText(/IEBC data uploads/i).length).toBeGreaterThan(0)
+    const openLinks = screen.getAllByRole('link', { name: 'Open PIOS' })
+    expect(openLinks.length).toBeGreaterThan(0)
+    openLinks.forEach((link) => {
+      expect(link).toHaveAttribute('href', 'https://pios-three.vercel.app')
+    })
+  })
 })

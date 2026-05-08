@@ -110,10 +110,12 @@ export function HomePage() {
             House Aurelius
             <span className="hero-title-accent">Technologies</span>
           </h1>
+          <p className="intro">
+            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, Mkulima, and PIOS -
           <p className="hero-intro">
             One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, and Mkulima —
             purpose-built platforms for schools, salons, property, ministry, personal finance,
-            and agriculture across Africa.
+            agriculture, and political campaign intelligence across Africa.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#platforms">

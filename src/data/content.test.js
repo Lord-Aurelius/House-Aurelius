@@ -19,18 +19,31 @@ describe('platformApps', () => {
     expect(mkulima.modules).toContain('QR-based care tracking for animals and plants')
   })
 
-  it('stores Android download links for every public platform', () => {
-    expect(platformApps).toHaveLength(6)
-    expect(platformApps.every((app) => app.download?.android?.url)).toBe(true)
+  it('includes PIOS as a first-class platform', () => {
+    const pios = platformApps.find((app) => app.id === 'pios')
+    expect(pios).toMatchObject({
+      name: 'PIOS',
+      url: 'https://pios-three.vercel.app',
+    })
+    expect(pios.modules).toContain('IEBC data uploads for GIS political mapping')
+    expect(pios.landing.capabilities.map((item) => item.title)).toContain('AI Analytics')
+  })
+
+  it('stores Android download links for platforms with released mobile builds', () => {
+    expect(platformApps).toHaveLength(7)
+    const androidDownloads = platformApps.filter((app) => app.download?.android)
+    expect(androidDownloads).toHaveLength(6)
+    expect(androidDownloads.every((app) => app.download.android.url)).toBe(true)
   })
 })
 
 describe('publicStats', () => {
-  it('reflects six connected platforms and the agriculture vertical', () => {
-    expect(publicStats).toContainEqual({ label: 'Platforms Connected', value: '6' })
+  it('reflects seven connected platforms and the political analytics vertical', () => {
+    expect(publicStats).toContainEqual({ label: 'Platforms Connected', value: '7' })
     expect(publicStats).toContainEqual({
       label: 'Business Verticals',
-      value: 'Education, POS, Real Estate, Church, Personal Finance, Agriculture',
+      value:
+        'Education, POS, Real Estate, Church, Personal Finance, Agriculture, Political Analytics',
     })
   })
 })
