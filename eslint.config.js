@@ -10,6 +10,7 @@ export default defineConfig([
     'android/app/build/**',
     'android/app/src/main/assets/public/assets/**',
     'hapos-app/**',
+    'videos/**/vendor/**',
   ]),
   {
     files: ['**/*.{js,jsx}'],
