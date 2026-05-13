@@ -129,6 +129,39 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* Product Promo Section */}
+      <section id="promo" className="section promo-section">
+        <div className="promo-copy">
+          <p className="hero-eyebrow">20 Second Product Promo</p>
+          <h2 className="section-title">See the House Aurelius platform story in motion</h2>
+          <p className="section-intro">
+            A quick overview of the connected platform ecosystem built for African schools,
+            salons, property teams, ministries, personal finance, agriculture, and campaign
+            operations.
+          </p>
+          <div className="promo-actions">
+            <a className="button button-primary" href="/videos/house-aurelius-promo.mp4" download>
+              Download Promo
+            </a>
+            <a className="button button-ghost" href="/videos/house-aurelius-promo.mp4" target="_blank" rel="noreferrer">
+              Open Video
+            </a>
+          </div>
+        </div>
+        <div className="promo-video-frame">
+          <video
+            className="promo-video"
+            controls
+            playsInline
+            preload="metadata"
+            poster="/videos/house-aurelius-promo-poster.png"
+          >
+            <source src="/videos/house-aurelius-promo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
       {/* Platforms Section */}
       <section id="platforms" className="section">
         <div className="section-header">
