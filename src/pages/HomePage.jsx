@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import { platformApps, publicStats } from '../data/content'
 import { getPublicMetrics } from '../services/publicMetrics'
 
-/* Scroll reveal hook */
-function useReveal(options = {}) {
+function useReveal(threshold = 0.1) {
   const ref = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -19,17 +18,16 @@ function useReveal(options = {}) {
           observer.unobserve(el)
         }
       },
-      { threshold: 0.1, ...options },
+      { threshold },
     )
 
     observer.observe(el)
     return () => observer.disconnect()
-  }, [options])
+  }, [threshold])
 
   return [ref, isVisible]
 }
 
-/* Platform Card Component */
 function PlatformCard({ app, index }) {
   const [ref, isVisible] = useReveal()
 
@@ -37,21 +35,23 @@ function PlatformCard({ app, index }) {
     <article
       ref={ref}
       className={`platform-card ${isVisible ? 'is-visible' : ''}`}
-      style={{ animationDelay: `${index * 0.15}s` }}
+      style={{ animationDelay: `${index * 0.08}s` }}
     >
-      <img
-        className="platform-card-image"
-        src={app.image}
-        alt={`${app.name} preview`}
-        loading="lazy"
-      />
+      <div className="platform-card-media">
+        <img
+          className="platform-card-image"
+          src={app.image}
+          alt={`${app.name} preview`}
+          loading="lazy"
+        />
+        <span className="platform-card-tag">{app.name}</span>
+      </div>
       <div className="platform-card-content">
-        <p className="platform-card-tag">{app.name}</p>
         <h3 className="platform-card-title">{app.fullName}</h3>
         <p className="platform-card-desc">{app.description}</p>
         <div className="platform-card-actions">
           <Link
-            className="button button-ghost"
+            className="button button-secondary"
             to={`/apps/${app.id ?? app.name.toLowerCase().replace(/\s+/g, '-')}`}
           >
             View Details
@@ -65,7 +65,6 @@ function PlatformCard({ app, index }) {
   )
 }
 
-/* Stat Component */
 function StatItem({ item, index }) {
   const [ref, isVisible] = useReveal()
 
@@ -73,7 +72,7 @@ function StatItem({ item, index }) {
     <article
       ref={ref}
       className={`stat-item ${isVisible ? 'is-visible' : ''}`}
-      style={{ animationDelay: `${index * 0.1}s` }}
+      style={{ animationDelay: `${index * 0.08}s` }}
     >
       <p className="stat-label">{item.label}</p>
       <p className="stat-value">{item.value}</p>
@@ -81,7 +80,6 @@ function StatItem({ item, index }) {
   )
 }
 
-/* Main Home Page */
 export function HomePage() {
   const [metrics, setMetrics] = useState(publicStats)
   const [metricsSource, setMetricsSource] = useState('fallback')
@@ -100,14 +98,13 @@ export function HomePage() {
     }
   }, [])
 
-  const [heroRef, heroVisible] = useReveal({ threshold: 0.1 })
+  const [heroRef, heroVisible] = useReveal(0.1)
+  const highlightedApps = platformApps.slice(0, 5)
 
   return (
     <>
-      {/* Hero Section */}
       <section ref={heroRef} className={`hero ${heroVisible ? 'is-visible' : ''}`}>
-        <div className="hero-bg" />
-        <div className="hero-content">
+        <div className="hero-copy">
           <p className="hero-eyebrow">Unified Business Platform</p>
           <h1 className="hero-title">
             House Aurelius
@@ -122,14 +119,38 @@ export function HomePage() {
             <a className="button button-primary" href="#platforms">
               Explore Platforms
             </a>
-            <Link className="button button-ghost" to="/about">
+            <Link className="button button-secondary" to="/about">
               Meet the Team
             </Link>
           </div>
         </div>
+
+        <div className="hero-visual" aria-label="House Aurelius platform overview">
+          <div className="hero-panel hero-panel-main">
+            <div className="panel-header">
+              <span className="status-dot" />
+              <span>Connected platform ecosystem</span>
+            </div>
+            <div className="platform-orbit">
+              {highlightedApps.map((app, index) => (
+                <div key={app.name} className="orbit-item" style={{ '--item-index': index }}>
+                  <img src={app.image} alt="" />
+                  <span>{app.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="hero-panel hero-panel-side">
+            {publicStats.map((item) => (
+              <div key={item.label} className="mini-stat">
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      {/* Product Promo Section */}
       <section id="promo" className="section promo-section">
         <div className="promo-copy">
           <p className="hero-eyebrow">20 Second Product Promo</p>
@@ -143,7 +164,12 @@ export function HomePage() {
             <a className="button button-primary" href="/videos/house-aurelius-promo.mp4" download>
               Download Promo
             </a>
-            <a className="button button-ghost" href="/videos/house-aurelius-promo.mp4" target="_blank" rel="noreferrer">
+            <a
+              className="button button-secondary"
+              href="/videos/house-aurelius-promo.mp4"
+              target="_blank"
+              rel="noreferrer"
+            >
               Open Video
             </a>
           </div>
@@ -162,7 +188,6 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* Platforms Section */}
       <section id="platforms" className="section">
         <div className="section-header">
           <h2 className="section-title">Connected Platforms</h2>
@@ -178,17 +203,14 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="section">
+      <section className="section stats-section">
         <div className="section-header">
           <h2 className="section-title">Public Dashboard Snapshot</h2>
           <p className="section-intro">
             These metrics are intentionally aggregated so internal records stay private.
           </p>
           {metricsSource !== 'api' ? null : (
-            <p className="section-intro" style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              Source: connected public app APIs
-            </p>
+            <p className="section-intro meta">Source: connected public app APIs</p>
           )}
         </div>
         <div className="stats-grid">
