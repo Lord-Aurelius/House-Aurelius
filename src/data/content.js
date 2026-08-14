@@ -783,8 +783,8 @@ export const platformApps = [
     fullName: 'AEGIS AI Governance & Intelligence System',
     description:
       'Central AI-powered platform for identity management, intelligence, document processing, and multi-application orchestration.',
-    url: 'https://aegis.vercel.app',
-    marketplaceUrl: 'https://aegis.vercel.app',
+    url: 'https://aegis-one-rust.vercel.app',
+    marketplaceUrl: 'https://aegis-one-rust.vercel.app',
     image:
       'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80',
     overview:
