@@ -1,0 +1,9 @@
+{
+  "appId": "com.houseaurelius.ha",
+  "appName": "House Aurelius",
+  "webDir": "dist",
+  "server": {
+    "url": "https://house-aurelius.vercel.app",
+    "cleartext": true
+  }
+}

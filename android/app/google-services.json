@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "462838817981",
+    "project_id": "house-aurelius-acb2a",
+    "storage_bucket": "house-aurelius-acb2a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462838817981:android:1bd6a235a55e57750bc3d4",
+        "android_client_info": {
+          "package_name": "com.houseaurelius.ha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2z1BeVY-ULtEgQ6lZbrlLn9VritzSGOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

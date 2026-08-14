@@ -1,0 +1,81 @@
+[
+  {
+    "url": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1400&q=80",
+    "type": "Image",
+    "contexts": [
+      "img[src]"
+    ],
+    "notes": "African professionals working with technology",
+    "description": "African professionals working with technology",
+    "sectionClasses": "hero-image",
+    "aboveFold": true
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1000&q=80",
+    "type": "Image",
+    "contexts": [
+      "img[src]"
+    ],
+    "notes": "HAES preview",
+    "description": "HAES preview",
+    "nearestHeading": "House Aurelius Education System",
+    "sectionClasses": "reveal card is-visible",
+    "aboveFold": true
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=80",
+    "type": "Image",
+    "contexts": [
+      "img[src]"
+    ],
+    "notes": "HAPOS preview",
+    "description": "HAPOS preview",
+    "nearestHeading": "House Aurelius Point of Sale",
+    "sectionClasses": "reveal card is-visible",
+    "aboveFold": true
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80",
+    "type": "Image",
+    "contexts": [
+      "img[src]"
+    ],
+    "notes": "HARE preview",
+    "description": "HARE preview",
+    "nearestHeading": "House Aurelius Real Estate",
+    "sectionClasses": "reveal card is-visible",
+    "aboveFold": true
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1000&q=80",
+    "type": "Image",
+    "contexts": [
+      "img[src]"
+    ],
+    "notes": "Church-lib preview",
+    "description": "Church-lib preview",
+    "nearestHeading": "Church-lib",
+    "sectionClasses": "reveal card is-visible",
+    "aboveFold": true
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80",
+    "type": "Image",
+    "contexts": [
+      "img[src]"
+    ],
+    "notes": "Hifathi preview",
+    "description": "Hifathi preview",
+    "nearestHeading": "Hifathi Personal Finance",
+    "sectionClasses": "reveal card is-visible",
+    "aboveFold": false
+  },
+  {
+    "url": "https://house-aurelius.vercel.app/favicon.svg",
+    "type": "Icon",
+    "contexts": [
+      "link[rel=\"icon\"]"
+    ],
+    "notes": null
+  }
+]

@@ -1,0 +1,55 @@
+[p] House Aurelius
+[p] Securely connecting your business platforms
+[a] Dashboard
+[a] About Us
+[a] Contact Us
+[a] Download
+[p] Unified Business Platform
+[span] House Aurelius
+[span] Technologies
+[p] One gateway to HAES, HAPOS, HARE, Church-lib, and Hifathi - purpose-built platforms for schools, salons, property, ministry, and personal finance across Africa.
+[a] Explore Platforms
+[a] Meet the Team
+[h2] Connected Platforms
+[p] Each platform is purpose-built for its industry. Click any card to explore features, capabilities, and how it can be deployed for your operation.
+[p] HAES
+[h3] House Aurelius Education System
+[p] Complete school platform for student registration, academics, and financial records.
+[a] View Details
+[a] Open App
+[p] HAPOS
+[h3] House Aurelius Point of Sale
+[p] POS for African beauty shops, salons, and spas, with sales, expenses, payroll, and customer management.
+[a] View Details
+[a] Open App
+[p] HARE
+[h3] House Aurelius Real Estate
+[p] Real estate platform for tenant registration, collections, expenses, and management.
+[a] View Details
+[a] Open App
+[p] Church-lib
+[h3] Church-lib
+[p] Church operations for newsletters, member registration, tithes, offerings, and media.
+[a] View Details
+[a] Open App
+[p] Hifathi
+[h3] Hifathi Personal Finance
+[p] Personal finance platform for tracking income, expenses, money advice, and marketplace access.
+[a] View Details
+[a] Open App
+[h2] Public Dashboard Snapshot
+[p] These metrics are intentionally aggregated so internal records stay private.
+[p] Platforms Connected
+[p] Business Verticals
+[p] Education, POS, Real Estate, Church, Personal Finance
+[p] Public Data Policy
+[p] Aggregated metrics only
+[p] House Aurelius
+[p] Built to connect your platforms securely across Africa.
+[a] theaureliushouse@gmail.com
+[a] 0702 059 499
+[a] Dashboard
+[a] About Us
+[a] Contact Us
+[a] Download
+[p] House Aurelius Technologies. All rights reserved.
