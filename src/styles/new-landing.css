@@ -314,6 +314,141 @@ h3 {
   background: rgba(212, 175, 55, 0.05);
 }
 
+/* === Hero Visual & Orbit === */
+.hero-copy {
+  text-align: center;
+  max-width: 900px;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero-visual {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+
+.hero-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  overflow: hidden;
+}
+
+.hero-panel-main {
+  min-height: 260px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.platform-orbit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.orbit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  width: calc(20% - 0.48rem);
+  min-width: 60px;
+}
+
+.orbit-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  transition: var(--transition-fast);
+}
+
+.orbit-item:hover img {
+  border-color: var(--gold);
+  transform: scale(1.1);
+}
+
+.orbit-item span {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.hero-panel-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mini-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.5rem;
+}
+
+.mini-stat span {
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.mini-stat strong {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--gold);
+}
+
+@media (max-width: 640px) {
+  .hero-visual {
+    grid-template-columns: 1fr;
+  }
+
+  .orbit-item {
+    width: calc(25% - 0.45rem);
+  }
+
+  .orbit-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* === Sections === */
 .section {
   padding: var(--space-2xl) 0;
