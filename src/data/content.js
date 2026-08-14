@@ -1092,7 +1092,7 @@ export const platformApps = [
     url: 'https://upesi.vercel.app',
     marketplaceUrl: 'https://upesi.vercel.app',
     image:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=80',
     overview:
       'Upesi is a boda boda hailing and dispatch platform designed for African mobility markets. It handles customer booking, rider management, dispatch algorithms, fare calculation, fraud scoring, payout settlement, and real-time tracking with Mapbox integration.',
     modules: [
@@ -1163,7 +1163,7 @@ export const platformApps = [
           title: 'One Tap to Book a Ride',
           text: 'Customers open the app, enter their destination, see the fare estimate, and confirm—matched with the nearest available rider in seconds.',
           image:
-            'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'Riders See Every Opportunity',
@@ -1194,7 +1194,7 @@ export const platformApps = [
     url: 'https://maji-os.vercel.app',
     marketplaceUrl: 'https://maji-os.vercel.app',
     image:
-      'https://images.unsplash.com/photo-1501004318855-b174af8ba3c0?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=80',
     overview:
       'Maji OS is an AI-powered smart water utility intelligence platform designed for African water companies. It provides tenant-aware water utility management, telemetry ingestion from smart meters, AI-powered anomaly detection, non-revenue water recovery, and comprehensive reporting.',
     modules: [
@@ -1265,7 +1265,7 @@ export const platformApps = [
           title: 'Smart Meters, Smarter Insights',
           text: 'Telemetry from thousands of smart meters flows through NEXUS into Maji OS, where AI analyzes patterns and surfaces anomalies before they become losses.',
           image:
-            'https://images.unsplash.com/photo-1501004318855-b174af8ba3c0?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'From Detection to Dispatch',
