@@ -99,7 +99,7 @@ export function HomePage() {
   }, [])
 
   const [heroRef, heroVisible] = useReveal(0.1)
-  const highlightedApps = platformApps.slice(0, 5)
+  const highlightedApps = platformApps
 
   return (
     <>
@@ -111,9 +111,10 @@ export function HomePage() {
             <span className="hero-title-accent">Technologies</span>
           </h1>
           <p className="hero-intro">
-            One gateway to HAES, HAPOS, HARE, Church-lib, Hifathi, Mkulima, and PIOS -
-            purpose-built platforms for schools, salons, property, ministry, personal finance,
-            agriculture, and political campaign intelligence across Africa.
+            One gateway to AEGIS, HAES, HAPOS, HARE, Church-lib, Hifathi, Mkulima, PIOS,
+            PaymentOS, NEXUS, Upesi, and Maji OS - purpose-built platforms for AI governance,
+            education, salons, property, ministry, personal finance, agriculture, political
+            intelligence, payments, IoT, mobility, and water utilities across Africa.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#platforms">
@@ -141,7 +142,7 @@ export function HomePage() {
             </div>
           </div>
           <div className="hero-panel hero-panel-side">
-            {publicStats.map((item) => (
+            {metrics.map((item) => (
               <div key={item.label} className="mini-stat">
                 <span>{item.label}</span>
                 <strong>{item.value}</strong>
