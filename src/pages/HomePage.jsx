@@ -99,7 +99,6 @@ export function HomePage() {
   }, [])
 
   const [heroRef, heroVisible] = useReveal(0.1)
-  const highlightedApps = platformApps
 
   return (
     <>
@@ -123,31 +122,6 @@ export function HomePage() {
             <Link className="button button-secondary" to="/about">
               Meet the Team
             </Link>
-          </div>
-        </div>
-
-        <div className="hero-visual" aria-label="House Aurelius platform overview">
-          <div className="hero-panel hero-panel-main">
-            <div className="panel-header">
-              <span className="status-dot" />
-              <span>Connected platform ecosystem</span>
-            </div>
-            <div className="platform-orbit">
-              {highlightedApps.map((app, index) => (
-                <div key={app.name} className="orbit-item" style={{ '--item-index': index }}>
-                  <img src={app.image} alt="" />
-                  <span>{app.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="hero-panel hero-panel-side">
-            {metrics.map((item) => (
-              <div key={item.label} className="mini-stat">
-                <span>{item.label}</span>
-                <strong>{item.value}</strong>
-              </div>
-            ))}
           </div>
         </div>
       </section>
