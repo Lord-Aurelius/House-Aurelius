@@ -35,7 +35,7 @@ export function SiteLayout() {
         </nav>
       </header>
 
-      <main className="site-main">
+      <main className="site-main page-content">
         <Outlet />
       </main>
 

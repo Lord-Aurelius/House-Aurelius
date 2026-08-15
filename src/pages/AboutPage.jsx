@@ -32,10 +32,8 @@ export function AboutPage() {
       <RevealItem tag="div">
         <h1>About House Aurelius</h1>
         <p className="muted">
-          House Aurelius builds practical systems for schools, service businesses,
-          real estate operators, and church communities across Africa. Our platforms
-          are designed to bring structure, visibility, and control to operations that
-          have long relied on manual processes and fragmented tools.
+          We build practical systems for schools, salons, real estate, and churches across Africa.
+          Purposeful software that brings structure and control to operations.
         </p>
       </RevealItem>
 
@@ -62,10 +60,9 @@ export function AboutPage() {
       <RevealItem tag="div" className="about-mission top-space" style={{ transitionDelay: '0.3s' }}>
         <h2>Our Mission</h2>
         <p className="muted">
-          We believe that every African institution — whether a school, a salon, a property company,
-          or a church — deserves enterprise-grade tools built specifically for their context.
-          House Aurelius Technologies exists to make that a reality: reliable, purposeful software
-          that meets operators where they are and scales with their ambition.
+          Every African institution deserves enterprise-grade tools built for their context.
+          We make reliable, purposeful software that meets operators where they are and scales
+          with their ambition.
         </p>
       </RevealItem>
     </section>

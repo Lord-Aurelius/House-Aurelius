@@ -55,8 +55,7 @@ export function ContactPage() {
         <SunIcon size={48} color="#f3cc6b" className="contact-sun" />
         <h1>Get in Touch</h1>
         <p className="muted contact-intro">
-          We'd love to hear from you. Reach out to learn more about our platforms or to get started
-          with House Aurelius.
+          Reach out to learn more about our platforms or get started with House Aurelius.
         </p>
       </RevealDiv>
 
@@ -69,7 +68,7 @@ export function ContactPage() {
             </svg>
           </div>
           <h3>Email Us</h3>
-          <p className="muted">Send us a message anytime. We typically respond within 24 hours.</p>
+          <p className="muted">We typically respond within 24 hours.</p>
           <a href="mailto:theaureliushouse@gmail.com" className="contact-link">
             theaureliushouse@gmail.com
           </a>
@@ -82,7 +81,7 @@ export function ContactPage() {
             </svg>
           </div>
           <h3>Call Us</h3>
-          <p className="muted">Prefer to speak directly? Give us a call during business hours.</p>
+          <p className="muted">Speak directly during business hours.</p>
           <a href="tel:+254702059499" className="contact-link">
             0702 059 499
           </a>
@@ -96,7 +95,7 @@ export function ContactPage() {
             </svg>
           </div>
           <h3>Our Location</h3>
-          <p className="muted">Based in the heart of East Africa, serving businesses across the continent.</p>
+          <p className="muted">Based in East Africa, serving businesses across the continent.</p>
           <span className="contact-link contact-location">Kenya, East Africa</span>
         </RevealDiv>
       </div>
@@ -105,8 +104,8 @@ export function ContactPage() {
         <SunIcon size={32} color="#f3cc6b" />
         <h2>Ready to Transform Your Operations?</h2>
         <p>
-          Whether you run a school, salon, property portfolio, or church — House Aurelius has a
-          platform purpose-built for you.
+          Whether you run a school, salon, property portfolio, or church — we have a
+          platform for you.
         </p>
         {!showForm && !sent && (
           <button
@@ -140,7 +139,7 @@ export function ContactPage() {
           ) : (
             <form className="contact-form" onSubmit={handleSubmit}>
               <h3>Send Us a Message</h3>
-              <p className="muted">Fill in the details below and your email client will open ready to send.</p>
+              <p className="muted">Your email client will open ready to send.</p>
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="cf-name">Your Name</label>

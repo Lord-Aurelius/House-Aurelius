@@ -9,7 +9,7 @@ export const platformApps = [
     name: 'HAES',
     fullName: 'House Aurelius Education System',
     description:
-      'Complete school platform for student registration, academics, and financial records. Powered by AEGIS.',
+      'School platform for registration, academics, and financial records.',
     url: 'https://haes-v1.vercel.app',
     marketplaceUrl: 'https://haes-v1.vercel.app',
     download: {
@@ -23,7 +23,7 @@ export const platformApps = [
     image:
       'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'HAES is an end-to-end school operations system for African schools, centralizing admissions, academics, finance, and reporting in one workflow. Powered by AEGIS, the central AI backbone that connects all House Aurelius platforms with intelligent automation, document processing, and cross-system analytics.',
+      'HAES centralizes admissions, academics, finance, and reporting for African schools in one workflow.',
     modules: [
       'Student registration and enrollment lifecycle',
       'Class setup, subjects, grading, and academic records',
@@ -36,35 +36,31 @@ export const platformApps = [
     landing: {
       headline: 'Run Your Entire School From One System',
       subtext:
-        'HAES centralizes student registration, academics, and financial records into a single, controlled platform for African institutions. Powered by AEGIS, the school gains AI-driven academic insights, automated reporting, and intelligent alerts—turning raw data into actionable decisions for school leaders.',
+        'HAES centralizes student registration, academics, and financial records for African institutions. AEGIS adds AI-driven insights, automated reporting, and intelligent alerts.',
       primaryCta: 'Get Started',
       secondaryCta: 'Request Demo',
-      valueBlock:
-        'HAES eliminates scattered tools and manual processes. Every student, every record, every transaction—tracked, structured, and accessible in real time. AEGIS intelligence layer adds predictive analytics for student performance, automated fee reminders, and smart document processing across the entire school.',
       capabilities: [
         {
           badge: 'SM',
           title: 'Student Management',
-          text: 'Register, update, and control student data from a single interface across nursery, primary, and secondary levels.',
+          text: 'Register and control student data across nursery, primary, and secondary levels.',
         },
         {
           badge: 'AT',
           title: 'Academic Tracking',
-          text: 'Monitor performance, grades, and progression with precision for teachers, heads of department, and school leaders.',
+          text: 'Monitor performance, grades, and progression for teachers and school leaders.',
         },
         {
           badge: 'FC',
           title: 'Financial Control',
-          text: 'Track fees, payments, and balances with full transparency for bursars and school finance offices.',
+          text: 'Track fees, payments, and balances with full transparency.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered academic insights, automated report generation, and predictive alerts that help school leaders make faster, data-driven decisions.',
+          text: 'AI-powered insights, automated reports, and predictive alerts for data-driven decisions.',
         },
       ],
-      authority:
-        'Built for institutions that require discipline in their systems. HAES enforces structure, reduces administrative load, and exposes the data needed to make decisions without delay. AEGIS integration means every report, alert, and document flows through a unified intelligence layer—giving school administrators AI-powered visibility they never had before.',
       highlights: [
         'One record per student from admission to graduation',
         'Teacher-friendly grade capture and academic oversight',
@@ -78,29 +74,29 @@ export const platformApps = [
       ],
       testimonial: {
         quote:
-          'Before HAES, we worked from separate sheets and delayed reports. Now our teachers, admins, and finance office run from one reliable system.',
+          'Before HAES, we worked from separate sheets and delayed reports. Now everything runs from one system.',
         author: 'School Operations Team',
       },
       conversion:
-        'Stop operating in fragments. Move your institution into a system designed for control and scale.',
+        'Stop operating in fragments. Move your institution into a system designed for control.',
       conversionCta: 'Deploy HAES in Your School',
       gallery: [],
       storyBlocks: [
         {
           title: 'Classroom to Office Continuity',
-          text: 'Teachers capture academic records while administrators monitor progress centrally, so learning data and school operations stay connected.',
+          text: 'Teachers capture records while administrators monitor progress from one system.',
           image:
             'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'Campus-Wide Visibility',
-          text: 'From admissions desks to departmental heads, every authorized role works from the same system with clear accountability.',
+          text: 'Every authorized role works from the same system with clear accountability.',
           image:
             'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Finance Discipline for School Growth',
-          text: 'Bursary workflows, fee tracking, and reporting come together in one place for better planning and confident decision-making.',
+          title: 'Finance Discipline',
+          text: 'Fee tracking, bursary workflows, and reporting in one place.',
           image:
             'https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80',
         },
@@ -112,7 +108,7 @@ export const platformApps = [
     name: 'HAPOS',
     fullName: 'House Aurelius Point of Sale',
     description:
-      'POS for African beauty shops, salons, and spas, with sales, expenses, payroll, and customer management. Powered by AEGIS.',
+      'POS for salons and spas with sales, expenses, payroll, and customer management.',
     url: 'https://hapos.vercel.app',
     marketplaceUrl: 'https://hapos.vercel.app',
     download: {
@@ -126,7 +122,7 @@ export const platformApps = [
     image:
       'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'HAPOS is a point-of-sale platform tailored for African beauty shops, salons, and spas, built for daily operations, customer relationships, and financial control. Powered by AEGIS, it delivers AI-driven sales analytics, customer behavior insights, and intelligent inventory forecasting.',
+      'HAPOS manages appointments, services, inventory, and payments for African beauty shops and spas.',
     modules: [
       'Sales and invoicing workflow for salon and spa services',
       'Expense recording and operating-cost visibility',
@@ -144,40 +140,36 @@ export const platformApps = [
     landing: {
       headline: 'Run Your Salon. Control Every Booking and Sale.',
       subtext:
-        'HAPOS is built for barbershops, salons, and spas—managing appointments, services, inventory, and payments in one system. Powered by AEGIS, the platform surfaces AI-driven insights on peak hours, top services, customer retention patterns, and revenue forecasting.',
+        'HAPOS manages appointments, services, inventory, and payments for barbershops, salons, and spas. AEGIS surfaces AI insights on peak hours, top services, and retention.',
       primaryCta: 'Get Started',
       secondaryCta: 'Request Demo',
-      valueBlock:
-        'HAPOS replaces appointment books, manual records, and scattered payment tracking. Every client, every service, every transaction—organized and accessible in real time. AEGIS intelligence layer transforms raw sales data into actionable business insights: which services drive revenue, when peak hours hit, and which customers are due for a return visit.',
       capabilities: [
         {
           badge: 'AC',
           title: 'Appointment & Client Management',
-          text: 'Schedule bookings, track client history, and manage walk-ins without confusion.',
+          text: 'Schedule bookings, track client history, and manage walk-ins.',
         },
         {
           badge: 'SS',
           title: 'Service & Sales Processing',
-          text: 'Handle service charges and product sales in a single, fast checkout flow.',
+          text: 'Handle service charges and product sales in one checkout flow.',
         },
         {
           badge: 'IC',
           title: 'Inventory Control',
-          text: 'Track products, usage, and restocking to avoid shortages and leakage.',
+          text: 'Track products, usage, and restocking to avoid shortages.',
         },
         {
           badge: 'FV',
           title: 'Financial Visibility',
-          text: 'Monitor daily earnings, staff performance, and cash flow with precision.',
+          text: 'Monitor daily earnings, staff performance, and cash flow.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered sales forecasting, customer retention scoring, and peak-hour analytics that help salon owners optimize pricing, staffing, and inventory.',
+          text: 'AI-powered forecasting, retention scoring, and peak-hour analytics.',
         },
       ],
-      authority:
-        'Built for high-traffic service environments. HAPOS enforces structure at the front desk, reduces missed bookings, and keeps revenue tracking exact. AEGIS integration turns every transaction into intelligence—predicting demand, identifying loyal customers, and surfacing revenue opportunities before they slip away.',
       highlights: [
         'Manage 50+ clients a day without losing track',
         'Instant view of daily earnings and top-performing services',
@@ -190,32 +182,32 @@ export const platformApps = [
         { label: 'Booking control', value: 'Zero missed appointments' },
       ],
       conversion:
-        'Stop relying on memory and paper. Run your shop on a system designed for speed, accuracy, and control.',
+        'Stop relying on memory and paper. Run your shop on a system built for speed and control.',
       conversionCta: 'Deploy HAPOS in Your Shop',
       gallery: [],
       storyBlocks: [
         {
           title: 'Front Desk, Under Control',
-          text: 'Receptionists handle walk-ins, bookings, and payments from a single screen—no double-booking, no lost records, no delays.',
+          text: 'Walk-ins, bookings, and payments from a single screen—no double-booking.',
           image:
             'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Every Service, Every Sale Tracked',
-          text: 'From a haircut to a product sale, HAPOS captures every transaction. At the end of the day, your revenue report is ready—no manual tallying needed.',
+          title: 'Every Sale Tracked',
+          text: 'Every transaction is logged. Revenue reports are ready at day end.',
           image:
             'https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Stock Levels That Don\'t Surprise You',
-          text: 'Know what products are running low before they run out. HAPOS ties inventory directly to sales so restocking is proactive, not reactive.',
+          title: 'Stock That Doesn\'t Surprise You',
+          text: 'Know what\'s running low before it runs out. Restocking is proactive.',
           image:
             'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'Before HAPOS, we tracked bookings in a notebook and counted cash at the end of the day with no real record. Now every service, every product, every payment is logged. We actually know what our shop earns each day.',
+          'Before HAPOS, we tracked bookings in a notebook. Now every service, product, and payment is logged.',
         author: 'Salon Owner, Lagos',
       },
     },
@@ -225,7 +217,7 @@ export const platformApps = [
     name: 'HARE',
     fullName: 'House Aurelius Real Estate',
     description:
-      'Real estate platform for tenant registration, collections, expenses, and management. Powered by AEGIS.',
+      'Real estate platform for tenant registration, collections, and property management.',
     url: 'https://hares.vercel.app',
     marketplaceUrl: 'https://hares.vercel.app',
     download: {
@@ -239,7 +231,7 @@ export const platformApps = [
     image:
       'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'HARE manages property operations from tenant onboarding to payment collections, expenses, and occupancy visibility. Powered by AEGIS, it delivers AI-driven occupancy forecasting, tenant risk scoring, and intelligent lease management across entire property portfolios.',
+      'HARE manages property operations from tenant onboarding to payment collections and occupancy visibility.',
     modules: [
       'Tenant registration and lease-profile management',
       'Rent billing, payment collection, and arrears tracking',
@@ -252,45 +244,41 @@ export const platformApps = [
     landing: {
       headline: 'One System for Complete Property Control',
       subtext:
-        'HARE is a real estate management platform that unifies tenant registration, rent collection, communication, and property tracking. Powered by AEGIS, landlords gain AI-driven insights on tenant risk, lease renewal predictions, and occupancy optimization—turning property data into smarter decisions.',
+        'HARE unifies tenant registration, rent collection, communication, and property tracking. AEGIS adds AI-driven tenant risk scoring and occupancy optimization.',
       primaryCta: 'Get Started',
       secondaryCta: 'Request Demo',
-      valueBlock:
-        'HARE removes fragmented property management processes. Tenant records, rent status, and landlord communication are centralized in one system. AEGIS intelligence layer adds predictive lease analytics, automated arrears alerts, and tenant risk scoring—helping landlords reduce vacancies and collect rent faster.',
       capabilities: [
         {
           badge: 'TR',
-          title: 'Tenant Registration & Management',
-          text: 'Register tenants with structured profiles linked to each unit and property.',
+          title: 'Tenant Registration',
+          text: 'Register tenants with structured profiles linked to each unit.',
         },
         {
           badge: 'RC',
-          title: 'Rent Collection & Tracking',
-          text: 'Monitor payments, arrears, and receipts with real-time financial visibility.',
+          title: 'Rent Collection',
+          text: 'Monitor payments, arrears, and receipts with real-time visibility.',
         },
         {
           badge: 'TL',
           title: 'Tenant–Landlord Communication',
-          text: 'Direct messaging system for notices, updates, and issue resolution.',
+          text: 'Direct messaging for notices, updates, and issue resolution.',
         },
         {
           badge: 'QR',
-          title: 'QR-Based Verification System',
-          text: 'Use QR codes for tenant check-in, registration confirmation, and payment validation at the property level.',
+          title: 'QR-Based Verification',
+          text: 'QR codes for tenant check-in, registration, and payment validation.',
         },
         {
           badge: 'MP',
           title: 'Marketplace Integration',
-          text: 'List and discover properties, vacancies, and rental opportunities within a built-in marketplace.',
+          text: 'List properties, vacancies, and rental opportunities in a built-in marketplace.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered tenant risk scoring, lease renewal prediction, and occupancy optimization that help landlords maximize rental income and reduce vacancies.',
+          text: 'AI-powered tenant risk scoring, lease renewal prediction, and occupancy optimization.',
         },
       ],
-      authority:
-        'Built for structured property ecosystems. HARE enforces accountability between tenants and landlords, reduces administrative friction, and creates a transparent rental flow from listing to occupancy. AEGIS integration means every tenant, every payment, and every lease feeds into predictive analytics—helping landlords make smarter, faster property decisions.',
       highlights: [
         'Track every tenant and payment without spreadsheets',
         'Instant arrears visibility across all units',
@@ -303,32 +291,32 @@ export const platformApps = [
         { label: 'Admin overhead', value: 'Reduced to zero manual work' },
       ],
       conversion:
-        'Eliminate manual tracking and disconnected records. Manage your entire property portfolio through a single controlled system.',
+        'Manage your entire property portfolio through a single controlled system.',
       conversionCta: 'Deploy HARE for Your Properties',
       gallery: [],
       storyBlocks: [
         {
-          title: 'Tenant Onboarding Without the Paperwork',
-          text: 'Register tenants digitally, link them to specific units, and generate QR verification—all in minutes. Every record is searchable and always up to date.',
+          title: 'Tenant Onboarding, Digitized',
+          text: 'Register tenants digitally, link them to units, and generate QR verification in minutes.',
           image:
             'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Rent Collection, Tracked to the Day',
-          text: 'Know who has paid, who is overdue, and by how much—across every property you manage. HARE gives landlords a real-time rent ledger with no manual tallying.',
+          title: 'Rent Collection, Tracked',
+          text: 'Know who has paid, who is overdue, and by how much—across every property.',
           image:
             'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Happy Tenants, Smooth Operations',
-          text: 'When tenants can communicate issues directly and landlords respond through the platform, disputes resolve faster and occupancy stays high.',
+          title: 'Smooth Operations',
+          text: 'Direct communication resolves disputes faster and keeps occupancy high.',
           image:
             'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'Managing 12 units across two properties used to mean chasing tenants by phone and writing receipts by hand. HARE changed that completely. I can see who has paid, who owes, and what each unit looks like—all from one screen.',
+          'Managing 12 units used to mean chasing tenants by phone. HARE changed that completely.',
         author: 'Property Manager, Accra',
       },
     },
@@ -338,7 +326,7 @@ export const platformApps = [
     name: 'Church-lib',
     fullName: 'Church-lib',
     description:
-      'Church operations for newsletters, member registration, tithes, offerings, and media. Powered by AEGIS.',
+      'Church operations for member registration, tithes, newsletters, and media.',
     url: 'https://church-lib.vercel.app',
     marketplaceUrl: 'https://church-lib.vercel.app',
     download: {
@@ -352,7 +340,7 @@ export const platformApps = [
     image:
       'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'Church-lib supports church administration by combining membership records, giving workflows, communication, and media organization. Powered by AEGIS, it delivers AI-driven member engagement insights, sermon content management, and intelligent giving analytics.',
+      'Church-lib combines membership records, giving workflows, communication, and media for church administration.',
     modules: [
       'Member and family registration records',
       'Tithes and offerings tracking with safe summaries',
@@ -365,54 +353,45 @@ export const platformApps = [
     landing: {
       headline: 'One System for a Fully Connected Church',
       subtext:
-        'Church-Lib centralizes church operations into a single platform—member registration, attendance tracking, communication, media, and administration. Powered by AEGIS, church leaders gain AI-driven insights on member engagement, giving patterns, and community health—turning operational data into stronger ministry decisions.',
+        'Church-Lib centralizes member registration, attendance, communication, media, and administration. AEGIS adds AI-driven insights on engagement and giving patterns.',
       primaryCta: 'Get Started',
       secondaryCta: 'Request Demo',
-      valueBlock:
-        'Church-Lib replaces fragmented church records and manual processes. Membership, attendance, announcements, and internal coordination are unified in one controlled system. AEGIS intelligence layer adds member engagement scoring, giving trend analysis, and automated sermon content tagging—helping pastors and administrators serve their congregation more effectively.',
       capabilities: [
         {
           badge: 'MR',
-          title: 'Member Registration & Management',
-          text: 'Collect and maintain structured member profiles for complete congregation visibility.',
+          title: 'Member Registration',
+          text: 'Structured member profiles for complete congregation visibility.',
         },
         {
           badge: 'QR',
-          title: 'QR Attendance System',
-          text: 'Record attendance quickly and accurately using QR-based check-ins.',
+          title: 'QR Attendance',
+          text: 'Record attendance quickly with QR-based check-ins.',
         },
         {
           badge: 'MA',
           title: 'Media Access',
-          text: 'Share sermons, teachings, and church content directly within the platform.',
+          text: 'Share sermons, teachings, and church content in-platform.',
         },
         {
           badge: 'NA',
-          title: 'Church News & Activities',
+          title: 'News & Activities',
           text: 'Distribute announcements, events, and updates in real time.',
         },
         {
           badge: 'SL',
           title: 'Staff Daily Logs',
-          text: 'Track staff activity, duties, and operational updates for accountability.',
-        },
-        {
-          badge: 'MP',
-          title: 'Marketplace Integration',
-          text: 'Enable a shared marketplace for church-related goods, services, and community exchange.',
+          text: 'Track staff activity and duties for accountability.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered member engagement scoring, giving pattern analysis, and sermon content management that help church leaders understand and serve their congregation better.',
+          text: 'AI-powered member engagement scoring and giving pattern analysis.',
         },
       ],
-      authority:
-        'Built for structured ministry operations. Church-Lib improves coordination, strengthens communication, and ensures every aspect of church management is documented and accessible. AEGIS integration means member patterns, giving trends, and community health metrics flow through a unified intelligence layer—giving pastors and administrators data-driven clarity.',
       highlights: [
-        'Full congregation visibility from a single member registry',
-        'QR-based attendance that replaces paper sign-in sheets',
-        'Sermons, media, and announcements in one accessible platform',
+        'Full congregation visibility from a single registry',
+        'QR-based attendance that replaces paper sign-in',
+        'Sermons, media, and announcements in one platform',
         'AEGIS-powered member engagement and giving analytics',
       ],
       impactMetrics: [
@@ -422,32 +401,32 @@ export const platformApps = [
         { label: 'AI insights', value: 'Member engagement scoring' },
       ],
       conversion:
-        'Move from manual records to a unified church system designed for clarity, accountability, and growth.',
+        'Move from manual records to a unified church system built for clarity.',
       conversionCta: 'Deploy Church-Lib for Your Ministry',
       gallery: [],
       storyBlocks: [
         {
-          title: 'Every Member, Properly Registered',
-          text: 'Build a structured record for every congregation member—names, family units, contact details, and history—so your church always knows who it serves.',
+          title: 'Every Member, Registered',
+          text: 'Build structured records for every member—names, family, contact details.',
           image:
             'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'Attendance Without the Clipboard',
-          text: 'Members check in via QR code on their phone. Attendance is captured instantly—no paper, no manual entry, no missing records.',
+          text: 'Members check in via QR code. Attendance captured instantly.',
           image:
             'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Sermons and Media, Always Accessible',
-          text: 'Upload and share service recordings, teaching series, and church media through the platform—so no member misses what matters.',
+          title: 'Sermons Always Accessible',
+          text: 'Upload and share service recordings through the platform.',
           image:
             'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'We had member records in three different places—a register, a WhatsApp group, and the finance team\'s notebook. Church-Lib brought it all into one system. Our pastors, admin, and media team now work from the same platform without confusion.',
+          'We had records in three places. Church-Lib brought it all into one system.',
         author: 'Church Administrator, Nairobi',
       },
     },
@@ -457,7 +436,7 @@ export const platformApps = [
     name: 'Hifathi',
     fullName: 'Hifathi Personal Finance',
     description:
-      'Personal finance platform for tracking income, expenses, money advice, and marketplace access. Powered by AEGIS.',
+      'Personal finance for tracking income, expenses, and money decisions.',
     url: 'https://hifathi.vercel.app',
     marketplaceUrl: 'https://hifathi.vercel.app',
     download: {
@@ -471,7 +450,7 @@ export const platformApps = [
     image:
       'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'Hifathi gives individuals and households one place to track income, control expenses, receive practical money guidance, and participate in a marketplace built into the platform. Powered by AEGIS, it delivers AI-driven spending insights, personalized financial advice, and predictive budget alerts.',
+      'Hifathi helps individuals track income, control expenses, and receive practical money guidance in one place.',
     modules: [
       'Income tracking across salary, business, and side-hustle streams',
       'Expense recording with category-level visibility and history',
@@ -490,45 +469,36 @@ export const platformApps = [
     landing: {
       headline: 'Take Control of Income, Expenses, and Everyday Decisions',
       subtext:
-        'Hifathi is a personal finance platform that helps users record what comes in, track what goes out, and receive practical advice for managing money with clarity. Powered by AEGIS, users get AI-driven spending analysis, personalized financial coaching, and predictive budget alerts—turning everyday transactions into smarter money decisions.',
+        'Hifathi helps users record what comes in, track what goes out, and receive practical advice. AEGIS adds AI-driven spending analysis and personalized coaching.',
       primaryCta: 'Open Hifathi',
       secondaryCta: 'Explore Marketplace',
-      valueBlock:
-        'Hifathi replaces guesswork and scattered notes with one clear system for income tracking, expense control, and better money decisions. AEGIS intelligence layer analyzes spending patterns, identifies savings opportunities, and delivers personalized coaching—helping users build financial discipline without complexity.',
       capabilities: [
         {
           badge: 'IT',
           title: 'Income Tracking',
-          text: 'Capture salary, business revenue, casual earnings, and other inflows in one organized view.',
+          text: 'Capture salary, business revenue, and casual earnings in one view.',
         },
         {
           badge: 'EX',
           title: 'Expense Management',
-          text: 'Track spending by category so users can see where money goes and where pressure is building.',
+          text: 'Track spending by category to see where money goes.',
         },
         {
           badge: 'FA',
           title: 'Financial Advice',
-          text: 'Offer users practical guidance on how to manage income, spending discipline, and everyday choices.',
+          text: 'Practical guidance on income management and spending discipline.',
         },
         {
           badge: 'BD',
           title: 'Budget Visibility',
-          text: 'Give a working picture of financial movement so users can plan better from week to week.',
-        },
-        {
-          badge: 'MP',
-          title: 'Marketplace Access',
-          text: 'Connect users to a marketplace experience within the platform for useful goods and services.',
+          text: 'A working picture of financial movement for better weekly planning.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered spending pattern analysis, savings opportunity detection, and personalized financial coaching that helps users build better money habits.',
+          text: 'AI-powered spending analysis, savings detection, and personalized coaching.',
         },
       ],
-      authority:
-        'Built for users who need discipline in personal finance without complexity. Hifathi helps people see patterns, control habits, and make better financial decisions from one connected system. AEGIS integration means every transaction feeds into personalized AI coaching—turning raw spending data into actionable financial guidance.',
       highlights: [
         'Track income and expenses without spreadsheets',
         'See spending pressure before it becomes a problem',
@@ -541,32 +511,32 @@ export const platformApps = [
         { label: 'User convenience', value: 'Tracking and marketplace together' },
       ],
       conversion:
-        'Stop relying on memory to manage money. Use Hifathi to track movement, improve habits, and make better financial decisions with confidence.',
+        'Stop relying on memory to manage money. Use Hifathi to track and improve.',
       conversionCta: 'Start Using Hifathi',
       gallery: [],
       storyBlocks: [
         {
           title: 'Know What Comes In',
-          text: 'Users can record every income source in one place, making it easier to see how much money is actually available across the month.',
+          text: 'Record every income source in one place to see what\'s actually available.',
           image:
             'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'See Where It Goes',
-          text: 'Every expense can be categorized and reviewed, helping users understand daily habits and identify avoidable spending quickly.',
+          text: 'Every expense categorized and reviewed for daily habit awareness.',
           image:
             'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Turn Tracking Into Better Decisions',
-          text: 'Because advice and marketplace access live inside the same platform, users can move from awareness to action without leaving the system.',
+          title: 'From Awareness to Action',
+          text: 'Advice and marketplace access live inside the same platform.',
           image:
             'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'Before Hifathi, I only guessed how much I earned and spent each week. Now I can see my income, control my expenses, and make better decisions before money disappears.',
+          'Before Hifathi, I only guessed how much I earned and spent. Now I can see and control it.',
         author: 'Early User, Nairobi',
       },
     },
@@ -576,7 +546,7 @@ export const platformApps = [
     name: 'Mkulima',
     fullName: 'Mkulima Farm Management',
     description:
-      'Farm management platform for produce records, livestock output, worker logs, payroll, QR care tracking, newsletters, duties, and farmer marketplace access. Powered by AEGIS.',
+      'Farm management for produce records, livestock, workers, payroll, and marketplace.',
     url: 'https://mkulima-three.vercel.app',
     marketplaceUrl: 'https://mkulima-three.vercel.app',
     download: {
@@ -590,7 +560,7 @@ export const platformApps = [
     image:
       'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'Mkulima helps farm owners and managers run produce records, livestock tracking, worker logs, payroll, duty assignment, QR-based care routines, newsletters, and farmer marketplace activity from one connected system. Powered by AEGIS, it delivers AI-driven crop yield predictions, livestock health insights, and worker productivity analytics.',
+      'Mkulima helps farm owners manage produce records, livestock, workers, payroll, and marketplace activity from one system.',
     modules: [
       'Produce records for harvests, inventory, and farm output',
       'Livestock counts, health notes, and output tracking',
@@ -611,54 +581,50 @@ export const platformApps = [
     landing: {
       headline: 'Run Your Farm Records, Workers, and Output From One System',
       subtext:
-        'Mkulima is built for farm owners and managers who need clear control over produce, animals, workers, payroll, duties, and daily care routines. Powered by AEGIS, the platform gains AI-driven crop yield predictions, livestock health monitoring, and worker productivity insights—turning farm data into smarter agricultural decisions.',
+        'Mkulima manages produce, animals, workers, payroll, and daily care routines. AEGIS adds AI-driven yield predictions, livestock health monitoring, and worker productivity insights.',
       primaryCta: 'Open Mkulima',
       secondaryCta: 'Explore Marketplace',
-      valueBlock:
-        'Mkulima replaces farm notebooks, scattered spreadsheets, and verbal follow-ups with one operating system for the farm. AEGIS intelligence layer analyzes produce patterns, predicts yield trends, monitors livestock health indicators, and surfaces worker efficiency insights—helping farm owners optimize output and reduce waste.',
       capabilities: [
         {
           badge: 'PR',
           title: 'Produce Records',
-          text: 'Track harvests, crop output, stock movement, and farm production history in one organized place.',
+          text: 'Track harvests, crop output, and farm production history.',
         },
         {
           badge: 'LO',
           title: 'Livestock Output',
-          text: 'Monitor animal counts, care notes, milk, eggs, weight, and other farm output tied to each livestock group.',
+          text: 'Monitor animal counts, care notes, milk, eggs, and weight.',
         },
         {
           badge: 'QR',
           title: 'QR Care Tracking',
-          text: 'Use QR codes to confirm daily care routines for animals and plants, creating accountability across the farm.',
+          text: 'QR codes confirm daily care routines for animals and plants.',
         },
         {
           badge: 'WL',
           title: 'Worker Logs',
-          text: 'Record daily worker attendance, assigned duties, completed work, and field activity without paper registers.',
+          text: 'Record daily attendance, duties, and field activity.',
         },
         {
           badge: 'PY',
           title: 'Payroll Control',
-          text: 'Handle permanent and casual worker payroll with clearer records of days worked, duties completed, and pay due.',
+          text: 'Handle permanent and casual worker payroll with clear records.',
         },
         {
           badge: 'MP',
           title: 'Farmer Marketplace',
-          text: 'Connect farm owners and managers to a marketplace for produce, inputs, services, and farmer-to-farmer trade.',
+          text: 'Connect to produce, inputs, services, and farmer-to-farmer trade.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered crop yield forecasting, livestock health monitoring, and worker productivity analytics that help farm owners optimize operations and maximize output.',
+          text: 'AI-powered yield forecasting, livestock health monitoring, and worker analytics.',
         },
       ],
-      authority:
-        'Built for farms where daily discipline matters. Mkulima gives owners and managers traceability across people, crops, animals, money, and market activity without slowing down field work. AEGIS integration means every harvest, every animal, every worker action feeds into predictive analytics—helping farmers anticipate yield, prevent livestock issues, and optimize labor.',
       highlights: [
         'Track produce, livestock, workers, payroll, and duties from one dashboard',
         'Use QR codes to verify animal and plant care routines',
-        'Educate workers through newsletters while connecting farmers to a marketplace',
+        'Educate workers through newsletters while connecting to a marketplace',
         'AEGIS-powered yield forecasting and livestock health insights',
       ],
       impactMetrics: [
@@ -667,32 +633,32 @@ export const platformApps = [
         { label: 'Payroll clarity', value: 'Work logs tied to pay records' },
       ],
       conversion:
-        'Stop running farm operations from memory, notebooks, and disconnected chats. Bring your farm records, workers, care routines, and market access into one structured platform.',
+        'Bring your farm records, workers, and market access into one structured platform.',
       conversionCta: 'Start Managing With Mkulima',
       gallery: [],
       storyBlocks: [
         {
           title: 'Produce Records That Stay Usable',
-          text: 'Farm managers can record crop output, harvest movement, and produce history as work happens, giving owners a clearer picture of what the farm is producing.',
+          text: 'Record crop output and harvest movement as work happens.',
           image:
             'https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'Animal Care With QR Accountability',
-          text: 'Each daily care task can be connected to a QR-based workflow, helping supervisors confirm that animals and plants received the right attention at the right time.',
+          text: 'Connect daily care tasks to QR workflows for supervision.',
           image:
             'https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Workers, Payroll, and Duties in Sync',
-          text: 'Daily logs, assigned duties, payroll records, and worker newsletters live in the same platform so field teams stay coordinated and owners can review operations quickly.',
+          title: 'Workers and Payroll in Sync',
+          text: 'Daily logs, duties, and payroll live in the same platform.',
           image:
             'https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'Before Mkulima, farm records lived in notebooks and worker updates came through calls. Now produce, animals, duties, and payroll are visible from one place.',
+          'Before Mkulima, records lived in notebooks. Now everything is visible from one place.',
         author: 'Farm Manager, East Africa',
       },
     },
@@ -702,13 +668,13 @@ export const platformApps = [
     name: 'PIOS',
     fullName: 'PIOS Political Intelligence & Operations System',
     description:
-      'Political analysis and campaign-management platform for staff data control, media, communications, AI analytics, surveys, IEBC data uploads, GIS political maps, and candidate visit tracking. Powered by AEGIS.',
+      'Political analysis and campaign management with AI analytics and GIS mapping.',
     url: 'https://pios-three.vercel.app',
     marketplaceUrl: 'https://pios-three.vercel.app',
     image:
       'https://images.unsplash.com/photo-1541872705-1f73c6400ec9?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'PIOS supports campaign teams with secure staff access, political data control, media and communication workflows, AI analytics, surveys, IEBC data imports, GIS political mapping, candidate visit records, and targeted mass communication follow-up. Powered by AEGIS, it delivers advanced AI-driven voter sentiment analysis, predictive campaign intelligence, and automated field reporting.',
+      'PIOS supports campaigns with staff access, data control, media, communication, AI analytics, surveys, IEBC data, and GIS mapping.',
     modules: [
       'Campaign staff login and role-based data control',
       'Media asset management for campaign messaging and publicity',
@@ -731,60 +697,56 @@ export const platformApps = [
     landing: {
       headline: 'Turn Campaign Data Into Political Ground Intelligence',
       subtext:
-        'PIOS gives campaign teams one command center for staff access, media, communication, AI analytics, surveys, IEBC data uploads, GIS political maps, and candidate visit follow-up. Powered by AEGIS, the platform delivers advanced AI-driven voter sentiment analysis, predictive campaign modeling, and automated field intelligence—turning raw campaign data into winning strategies.',
+        'PIOS gives campaigns one command center for staff access, media, communication, AI analytics, surveys, IEBC data, GIS maps, and visit follow-up.',
       primaryCta: 'Open PIOS',
       secondaryCta: 'Explore Campaign Intelligence',
-      valueBlock:
-        'PIOS replaces scattered campaign files, disconnected field notes, and delayed political reports with a controlled operating system for campaign intelligence. AEGIS intelligence layer analyzes voter sentiment patterns, predicts campaign outcomes, and automates field reporting—helping campaign teams move faster and make smarter decisions.',
       capabilities: [
         {
           badge: 'CI',
           title: 'Campaign Intelligence',
-          text: 'Centralize campaign activity, field records, political insights, and constituency-level planning in one operating view.',
+          text: 'Centralize campaign activity, field records, and constituency planning.',
         },
         {
           badge: 'SD',
           title: 'Staff Data Control',
-          text: 'Give staff secure login access while keeping campaign data organized, permissioned, and accountable.',
+          text: 'Secure login access with permissioned data and accountability.',
         },
         {
           badge: 'MM',
           title: 'Media Management',
-          text: 'Manage campaign media, publicity assets, communication material, and message coordination from one workspace.',
+          text: 'Manage campaign media, publicity assets, and message coordination.',
         },
         {
           badge: 'CM',
-          title: 'Communication Management',
-          text: 'Prepare supporter outreach, staff communication, and later mass messaging based on real campaign records.',
+          title: 'Communication',
+          text: 'Prepare supporter outreach and staff communication from real records.',
         },
         {
           badge: 'AI',
           title: 'AI Analytics',
-          text: 'Use AI-supported analysis to interpret campaign patterns, survey results, field signals, and political opportunities.',
+          text: 'AI-supported analysis of campaign patterns, surveys, and field signals.',
         },
         {
           badge: 'SV',
           title: 'Survey Operations',
-          text: 'Conduct surveys, capture responses, and turn public feedback into practical campaign intelligence.',
+          text: 'Conduct surveys and turn public feedback into campaign intelligence.',
         },
         {
           badge: 'GIS',
           title: 'GIS Political Mapping',
-          text: 'Upload IEBC data and generate GIS political maps for area analysis, planning, and ground coordination.',
+          text: 'Upload IEBC data and generate political maps for area analysis.',
         },
         {
           badge: 'VT',
-          title: 'Candidate Visit Tracking',
-          text: 'Mark candidate visits, record people met, and preserve those contacts for structured follow-up communication.',
+          title: 'Visit Tracking',
+          text: 'Record candidate visits and people met for structured follow-up.',
         },
       ],
-      authority:
-        'Built for campaigns that need discipline, speed, and traceability. PIOS connects political data, field movement, communication, media, and AI analysis so teams can move from information to action without losing control. AEGIS integration means every survey, every visit, every field report feeds into predictive modeling—giving campaign teams AI-powered intelligence they never had before.',
       highlights: [
         'Generate GIS political maps from IEBC data uploads',
-        'Track candidate visits and record people met for later communication',
-        'Use AI analytics, surveys, media, and staff control in one campaign system',
-        'AEGIS-powered voter sentiment analysis and predictive campaign modeling',
+        'Track candidate visits and record people met for follow-up',
+        'Use AI analytics, surveys, media, and staff control in one system',
+        'AEGIS-powered voter sentiment analysis and predictive modeling',
       ],
       impactMetrics: [
         { label: 'Ground intelligence', value: 'GIS maps and ward-level visibility' },
@@ -792,32 +754,32 @@ export const platformApps = [
         { label: 'Decision speed', value: 'AI-assisted campaign analysis' },
       ],
       conversion:
-        'Stop managing campaigns from disconnected chats, spreadsheets, and memory. Bring political analysis, mapping, surveys, visits, media, and communication into one structured system.',
+        'Bring political analysis, mapping, surveys, and communication into one structured system.',
       conversionCta: 'Open PIOS Campaign Command',
       gallery: [],
       storyBlocks: [
         {
-          title: 'From IEBC Data to GIS Political Maps',
-          text: 'Campaign teams can upload IEBC data and convert it into practical political maps for area analysis, constituency planning, and ground strategy.',
+          title: 'From IEBC Data to GIS Maps',
+          text: 'Upload IEBC data and convert it into practical political maps.',
           image:
             'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Candidate Visits Become Follow-Up Lists',
-          text: 'Every candidate visit can be marked, recorded, and connected to the people met, making later communication more structured and more targeted.',
+          title: 'Visits Become Follow-Up Lists',
+          text: 'Every visit recorded and connected to people met for later communication.',
           image:
             'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'AI Analytics for Campaign Decisions',
-          text: 'Survey results, field updates, media activity, and campaign records can feed AI-assisted analytics so teams can understand patterns before acting.',
+          title: 'AI Analytics for Decisions',
+          text: 'Survey results and field updates feed AI-assisted analytics.',
           image:
             'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'PIOS gives a campaign team one place to see the map, the data, the candidate movement, and the people to contact next.',
+          'PIOS gives a campaign one place to see the map, the data, and who to contact next.',
         author: 'Campaign Strategy Team',
       },
     },
@@ -827,13 +789,13 @@ export const platformApps = [
     name: 'AEGIS',
     fullName: 'AEGIS AI Governance & Intelligence System',
     description:
-      'Central AI-powered platform for identity management, intelligence, document processing, and multi-application orchestration.',
+      'Central AI platform for identity management, intelligence, and document processing.',
     url: 'https://aegis-one-rust.vercel.app',
     marketplaceUrl: 'https://aegis-one-rust.vercel.app',
     image:
       'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'AEGIS is the central AI-powered platform for House Aurelius, providing enterprise-grade identity management, AI intelligence, document processing, and cross-application orchestration across all House Aurelius products.',
+      'AEGIS is the central AI backbone connecting all House Aurelius products with identity management, intelligence, and orchestration.',
     modules: [
       'Multi-tenant identity management with role-based access control',
       'Conversational AI powered by Ollama with local model inference',
@@ -852,74 +814,70 @@ export const platformApps = [
       'Platform integrators',
     ],
     landing: {
-      headline: 'The Central Intelligence Hub for Your Entire Platform Ecosystem',
+      headline: 'The Central Intelligence Hub for Your Ecosystem',
       subtext:
-        'AEGIS is the enterprise-grade AI backbone that connects, orchestrates, and secures every House Aurelius application. From identity governance to intelligent automation, AEGIS provides the intelligence layer your operations need.',
+        'AEGIS is the enterprise AI backbone that connects, orchestrates, and secures every House Aurelius application.',
       primaryCta: 'Explore AEGIS',
       secondaryCta: 'View Documentation',
-      valueBlock:
-        'AEGIS eliminates siloed data and disconnected workflows. Every identity, document, insight, and cross-platform interaction flows through one controlled intelligence layer—ensuring security, compliance, and operational clarity.',
       capabilities: [
         {
           badge: 'ID',
-          title: 'Identity & Access Management',
+          title: 'Identity & Access',
           text: 'Multi-tenant identity governance with RBAC, SSO, and cross-platform authentication.',
         },
         {
           badge: 'AI',
           title: 'AI Intelligence Engine',
-          text: 'Conversational AI, document analysis, and predictive insights powered by local and cloud models.',
+          text: 'Conversational AI, document analysis, and predictive insights.',
         },
         {
           badge: 'DM',
           title: 'Document Processing',
-          text: 'OCR, summarization, and intelligent document management across all connected systems.',
+          text: 'OCR, summarization, and intelligent document management.',
         },
         {
           badge: 'OC',
-          title: 'Orchestration & Connectivity',
-          text: 'Agent workflows, automation pipelines, and real-time synchronization across the platform ecosystem.',
+          title: 'Orchestration',
+          text: 'Agent workflows, automation pipelines, and real-time synchronization.',
         },
       ],
-      authority:
-        'Built for enterprises requiring centralized AI governance. AEGIS provides the intelligence backbone that connects every House Aurelius product into a unified, secure, and auditable system.',
       highlights: [
         '436 live API endpoints across 34 modules',
         '66 database models with full audit trails',
-        'Real-time cross-platform orchestration and intelligence',
+        'Real-time cross-platform orchestration',
       ],
       impactMetrics: [
         { label: 'API Coverage', value: '436 endpoints' },
-        { label: 'Platform integrations', value: '6+ connected apps' },
-        { label: 'Intelligence layer', value: 'Real-time AI processing' },
+        { label: 'Integrations', value: '6+ connected apps' },
+        { label: 'Intelligence', value: 'Real-time AI processing' },
       ],
       conversion:
-        'Move from disconnected tools to a unified intelligence platform. Deploy AEGIS to connect, secure, and automate your entire operational ecosystem.',
+        'Deploy AEGIS to connect, secure, and automate your entire ecosystem.',
       conversionCta: 'Deploy AEGIS',
       gallery: [],
       storyBlocks: [
         {
-          title: 'Unified Identity Across Every Platform',
-          text: 'One identity layer connects staff, systems, and permissions across every House Aurelius application—eliminating duplicate accounts and scattered access control.',
+          title: 'Unified Identity',
+          text: 'One identity layer connects staff, systems, and permissions across every app.',
           image:
             'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'AI That Understands Your Business',
-          text: 'From document processing to predictive analytics, AEGIS brings contextual intelligence to every operational workflow without requiring specialized AI expertise.',
+          text: 'Contextual intelligence to every workflow without specialized AI expertise.',
           image:
             'https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Secure Cross-Platform Orchestration',
-          text: 'Every integration, workflow, and data exchange flows through audited channels with full traceability—ensuring compliance while maintaining operational speed.',
+          title: 'Secure Orchestration',
+          text: 'Every integration flows through audited channels with full traceability.',
           image:
             'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'AEGIS unified our entire platform ecosystem under one intelligence layer. We now have complete visibility across every application with centralized security and AI-powered automation.',
+          'AEGIS unified our entire ecosystem under one intelligence layer with complete visibility.',
         author: 'Platform Operations Team',
       },
     },
@@ -929,13 +887,13 @@ export const platformApps = [
     name: 'NEXUS',
     fullName: 'NEXUS IoT Infrastructure',
     description:
-      'Production-grade device pairing, telemetry ingestion, and IoT infrastructure for smart devices and enterprise systems. Powered by AEGIS.',
+      'IoT infrastructure for device pairing, telemetry, and smart device management.',
     url: 'https://nexus.vercel.app',
     marketplaceUrl: 'https://nexus.vercel.app',
     image:
       'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'NEXUS is the shared IoT infrastructure that bridges smart devices and applications. It provides production-grade device pairing, telemetry ingestion, and real-time processing for water metering, RFID, agriculture, smart buildings, energy, GPS, drones, and industrial telemetry. Powered by AEGIS, it delivers advanced AI-driven anomaly detection, predictive device health monitoring, and intelligent telemetry analysis.',
+      'NEXUS provides production-grade IoT infrastructure for device pairing, telemetry ingestion, and real-time processing.',
     modules: [
       'HTTP telemetry ingestion with validation and enrichment',
       'MQTT topic bridge for tenant and device communication',
@@ -957,78 +915,74 @@ export const platformApps = [
     landing: {
       headline: 'Connect Smart Devices to Intelligent Applications',
       subtext:
-        'NEXUS provides the production-grade IoT infrastructure that bridges smart meters, sensors, and devices to your applications. Powered by AEGIS, the platform gains advanced AI-driven anomaly detection, predictive device health monitoring, and intelligent telemetry analysis—turning raw sensor data into actionable operational intelligence.',
+        'NEXUS provides production-grade IoT infrastructure for device pairing, telemetry, and real-time processing. AEGIS adds predictive maintenance and anomaly detection.',
       primaryCta: 'Explore NEXUS',
       secondaryCta: 'View Architecture',
-      valueBlock:
-        'NEXUS eliminates the complexity of building IoT infrastructure from scratch. Device pairing, telemetry processing, anomaly detection, and real-time streaming are handled by one scalable, tenant-isolated system. AEGIS intelligence layer adds predictive maintenance scoring, anomaly pattern recognition, and cross-device correlation—helping operators prevent failures before they happen.',
       capabilities: [
         {
           badge: 'TI',
           title: 'Telemetry Ingestion',
-          text: 'HTTP, MQTT, and WebSocket ingestion with validation, enrichment, and event routing.',
+          text: 'HTTP, MQTT, and WebSocket ingestion with validation and routing.',
         },
         {
           badge: 'AD',
           title: 'AI Detection',
-          text: 'Anomaly detection, threshold processing, and leak probability estimation from device telemetry.',
+          text: 'Anomaly detection, threshold processing, and leak probability estimation.',
         },
         {
           badge: 'RT',
           title: 'Real-Time Streams',
-          text: 'WebSocket streams for live dashboards, maps, and operational monitoring.',
+          text: 'WebSocket streams for live dashboards and monitoring.',
         },
         {
           badge: 'DA',
           title: 'Domain Adapters',
-          text: 'Pluggable adapters for water, RFID, pressure, GPS, and custom IoT domains.',
+          text: 'Pluggable adapters for water, RFID, pressure, GPS, and custom domains.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered predictive device health scoring, anomaly pattern recognition, and cross-device correlation that help operators prevent failures and optimize infrastructure.',
+          text: 'Predictive device health scoring, anomaly recognition, and cross-device correlation.',
         },
       ],
-      authority:
-        'Built for enterprises requiring reliable IoT infrastructure. NEXUS provides the scalable, secure, and intelligent device-to-application bridge that powers smart cities, utilities, and industrial operations. AEGIS integration means every device, every telemetry stream, every alert feeds into predictive models—helping operators move from reactive maintenance to proactive prevention.',
       highlights: [
         '8 microservice architecture with shared domain logic',
-        'Tenant-scoped throughout: APIs, MQTT topics, events, database',
-        'AI-powered telemetry processing with anomaly and leak detection',
-        'AEGIS-powered predictive device health and anomaly intelligence',
+        'Tenant-scoped: APIs, MQTT topics, events, database',
+        'AI-powered telemetry processing with anomaly detection',
+        'AEGIS-powered predictive device health',
       ],
       impactMetrics: [
         { label: 'Microservices', value: '8 production services' },
-        { label: 'Device protocols', value: 'HTTP, MQTT, WebSocket' },
+        { label: 'Protocols', value: 'HTTP, MQTT, WebSocket' },
         { label: 'AI processing', value: 'Predictive anomaly detection' },
       ],
       conversion:
-        'Stop building IoT infrastructure from scratch. Deploy NEXUS to connect your devices, process telemetry, and deliver intelligent insights at scale.',
+        'Deploy NEXUS to connect devices, process telemetry, and deliver intelligent insights.',
       conversionCta: 'Deploy NEXUS',
       gallery: [],
       storyBlocks: [
         {
           title: 'Device Pairing at Scale',
-          text: 'Pair thousands of smart meters, sensors, and devices with secure authentication and automatic configuration—no manual onboarding required.',
+          text: 'Pair thousands of devices with secure authentication and auto-configuration.',
           image:
             'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'From Raw Telemetry to Actionable Insights',
-          text: 'NEXUS processes device data through AI-powered analysis, surfacing anomalies, thresholds, and patterns that require immediate attention.',
+          title: 'Raw Telemetry to Insights',
+          text: 'AI-powered analysis surfaces anomalies and patterns that need attention.',
           image:
             'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Real-Time Visibility Across Operations',
-          text: 'Live WebSocket streams push device status, alerts, and telemetry to dashboards and maps—giving operators complete situational awareness.',
+          title: 'Real-Time Visibility',
+          text: 'Live WebSocket streams push status and alerts to dashboards.',
           image:
             'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'NEXUS gave us the IoT backbone we needed without building from scratch. Our smart meters feed telemetry through one system that handles pairing, processing, and real-time alerting.',
+          'NEXUS gave us the IoT backbone we needed without building from scratch.',
         author: 'Smart Utility Operations',
       },
     },
@@ -1038,13 +992,13 @@ export const platformApps = [
     name: 'PaymentOS',
     fullName: 'PaymentOS Payment Gateway',
     description:
-      'Production-ready multi-tenant M-Pesa payment gateway with webhook signing, idempotency, and admin portal. Powered by AEGIS.',
+      'Multi-tenant M-Pesa payment gateway with webhook signing and admin portal.',
     url: 'https://payment-os.vercel.app',
     marketplaceUrl: 'https://payment-os.vercel.app',
     image:
       'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'PaymentOS is the central payment layer for all House Aurelius external applications. It handles M-Pesa Daraja STK Push integrations with multi-tenant routing, idempotent payments, HMAC-signed webhooks, and a full admin portal. Powered by AEGIS, it delivers AI-driven fraud detection, transaction anomaly analysis, and payment intelligence across the entire platform ecosystem.',
+      'PaymentOS is the central payment layer handling M-Pesa integrations with multi-tenant routing, idempotent payments, and signed webhooks.',
     modules: [
       'Multi-tenant payment routing with per-tenant M-Pesa configuration',
       'Daraja STK Push with automatic Paybill/Till routing',
@@ -1066,78 +1020,74 @@ export const platformApps = [
     landing: {
       headline: 'One Payment Gateway for Every Application',
       subtext:
-        'PaymentOS is the centralized M-Pesa payment infrastructure that powers all House Aurelius products. External apps call a single endpoint and receive signed webhooks—never touching Daraja credentials or payment logic. Powered by AEGIS, the gateway gains AI-driven fraud detection, transaction anomaly analysis, and cross-tenant payment intelligence—making every payment more secure and every transaction more transparent.',
+        'PaymentOS is the centralized M-Pesa infrastructure powering all House Aurelius products. Apps call one endpoint and receive signed webhooks.',
       primaryCta: 'Explore PaymentOS',
       secondaryCta: 'View API Docs',
-      valueBlock:
-        'PaymentOS eliminates the risk and complexity of embedding payment credentials in every application. Multi-tenant routing, idempotent transactions, and signed webhooks ensure every payment is secure, traceable, and reliable. AEGIS intelligence layer adds fraud pattern detection, anomaly scoring, and cross-tenant analytics—helping platform operators catch issues before they become losses.',
       capabilities: [
         {
           badge: 'PT',
           title: 'Payment Routing',
-          text: 'Multi-tenant routing with per-tenant Paybill/Till configuration and automatic STK Push delivery.',
+          text: 'Multi-tenant routing with per-tenant Paybill/Till and STK Push.',
         },
         {
           badge: 'SC',
           title: 'Security',
-          text: 'HMAC-signed webhooks, encrypted secrets, API key validation, and full transaction auditing.',
+          text: 'HMAC-signed webhooks, encrypted secrets, and full auditing.',
         },
         {
           badge: 'ID',
           title: 'Idempotency',
-          text: 'Unique tenant-invoice constraints prevent duplicate payments and ensure reliable reconciliation.',
+          text: 'Unique constraints prevent duplicate payments and ensure reconciliation.',
         },
         {
           badge: 'AP',
           title: 'Admin Portal',
-          text: 'Full tenant management, revenue tracking, and configuration portal for platform operators.',
+          text: 'Tenant management, revenue tracking, and configuration.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered fraud detection, transaction anomaly scoring, and cross-tenant payment intelligence that help platform operators prevent losses and ensure payment integrity.',
+          text: 'AI-powered fraud detection and transaction anomaly scoring.',
         },
       ],
-      authority:
-        'Built for platforms requiring secure, multi-tenant payment processing. PaymentOS provides the centralized payment infrastructure that every House Aurelius application relies on. AEGIS integration means every transaction feeds into fraud detection models—identifying suspicious patterns, scoring anomalies, and alerting operators before losses occur.',
       highlights: [
         'Single endpoint for all M-Pesa STK Push integrations',
         'Platform fee management with automatic reconciliation',
         'Used by Church-Lib, Upesi, and all HA payment flows',
-        'AEGIS-powered fraud detection and transaction anomaly analysis',
+        'AEGIS-powered fraud detection and anomaly analysis',
       ],
       impactMetrics: [
-        { label: 'Payment security', value: 'AI-powered fraud detection' },
+        { label: 'Security', value: 'AI-powered fraud detection' },
         { label: 'Tenant isolation', value: 'Per-tenant credential routing' },
-        { label: 'Platform integration', value: '4+ connected apps' },
+        { label: 'Integration', value: '4+ connected apps' },
       ],
       conversion:
-        'Stop embedding payment credentials in every application. Deploy PaymentOS to centralize, secure, and scale your M-Pesa integrations.',
+        'Deploy PaymentOS to centralize, secure, and scale your M-Pesa integrations.',
       conversionCta: 'Deploy PaymentOS',
       gallery: [],
       storyBlocks: [
         {
           title: 'One Call, Every Payment',
-          text: 'External apps send a single API call to PaymentOS and receive a signed webhook response—no Daraja credentials, no payment SDKs, no security risk.',
+          text: 'Apps send one API call and receive a signed response—no credentials exposed.',
           image:
             'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Multi-Tenant Payment Isolation',
-          text: 'Each tenant gets their own payment configuration, credentials, and webhook routing—ensuring complete separation while sharing one infrastructure.',
+          title: 'Multi-Tenant Isolation',
+          text: 'Each tenant gets their own configuration and webhook routing.',
           image:
             'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80',
         },
         {
-          title: 'Every Transaction, Fully Auditable',
-          text: 'PaymentOS maintains complete payment records with idempotency guarantees, making reconciliation and auditing straightforward and reliable.',
+          title: 'Fully Auditable',
+          text: 'Complete payment records with idempotency guarantees.',
           image:
             'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'PaymentOS unified our entire payment infrastructure. Every app now routes through one system with signed webhooks and complete audit trails.',
+          'PaymentOS unified our entire payment infrastructure. Every app routes through one system.',
         author: 'Platform Engineering Team',
       },
     },
@@ -1147,13 +1097,13 @@ export const platformApps = [
     name: 'Upesi',
     fullName: 'Upesi Boda Boda Hailing',
     description:
-      'Boda boda hailing and dispatch platform for African mobility markets with fraud scoring and real-time tracking. Powered by AEGIS.',
+      'Boda boda hailing and dispatch with fraud scoring and real-time tracking.',
     url: 'https://upesi.vercel.app',
     marketplaceUrl: 'https://upesi.vercel.app',
     image:
       'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'Upesi is a boda boda hailing and dispatch platform designed for African mobility markets. It handles customer booking, rider management, dispatch algorithms, fare calculation, fraud scoring, payout settlement, and real-time tracking with Mapbox integration. Powered by AEGIS, it delivers AI-driven demand prediction, dynamic pricing optimization, and intelligent fraud prevention.',
+      'Upesi handles customer booking, rider management, dispatch, fare calculation, fraud scoring, and real-time tracking for African mobility markets.',
     modules: [
       'Customer booking with route selection and fare estimation',
       'Rider management with onboarding and availability tracking',
@@ -1175,40 +1125,36 @@ export const platformApps = [
     landing: {
       headline: 'Hail, Dispatch, and Track Boda Bodas Across Africa',
       subtext:
-        'Upesi is a complete boda boda hailing platform built for African markets. Powered by AEGIS, the platform gains AI-driven demand prediction, dynamic pricing optimization, and intelligent fraud prevention—turning ride data into smarter dispatch decisions and better rider earnings.',
+        'Upesi is a complete boda boda hailing platform for African markets. AEGIS adds demand prediction, dynamic pricing, and fraud prevention.',
       primaryCta: 'Explore Upesi',
       secondaryCta: 'View Demo',
-      valueBlock:
-        'Upesi replaces manual dispatch, cash-only operations, and rider uncertainty with a complete digital hailing platform. AEGIS intelligence layer analyzes demand patterns, optimizes pricing in real time, and detects fraud attempts—helping operators maximize revenue while keeping riders and customers safe.',
       capabilities: [
         {
           badge: 'BK',
           title: 'Smart Booking',
-          text: 'Customer booking with route selection, fare estimation, and instant rider matching.',
+          text: 'Route selection, fare estimation, and instant rider matching.',
         },
         {
           badge: 'FS',
           title: 'Fraud Scoring',
-          text: 'Dedicated fraud detection engine that identifies suspicious activity and protects platform integrity.',
+          text: 'Detects suspicious activity and protects platform integrity.',
         },
         {
           badge: 'RT',
           title: 'Real-Time Tracking',
-          text: 'Live rider tracking via Mapbox satellite maps with turn-by-turn visibility for customers.',
+          text: 'Live rider tracking via Mapbox satellite maps.',
         },
         {
           badge: 'PY',
           title: 'Payout Settlement',
-          text: 'Automated rider payouts with M-Pesa integration through PaymentOS for cashless operations.',
+          text: 'Automated rider payouts with M-Pesa integration.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered demand prediction, dynamic pricing optimization, and intelligent fraud prevention that help operators maximize revenue and protect platform integrity.',
+          text: 'AI-powered demand prediction, dynamic pricing, and fraud prevention.',
         },
       ],
-      authority:
-        'Built for African mobility markets. Upesi understands the unique challenges of boda boda operations—cash payments, rider trust, route efficiency, and real-time coordination. AEGIS integration means every ride, every route, every transaction feeds into predictive models—helping operators optimize pricing, prevent fraud, and improve rider earnings.',
       highlights: [
         'Fraud scoring engine protects platform integrity',
         'PaymentOS integration for cashless M-Pesa payments',
@@ -1221,32 +1167,32 @@ export const platformApps = [
         { label: 'Fraud protection', value: 'Intelligent prevention' },
       ],
       conversion:
-        'Stop dispatching by phone and managing cash manually. Deploy Upesi to digitize your boda boda operations with real-time tracking, smart dispatch, and cashless payments.',
+        'Deploy Upesi to digitize your boda boda operations with smart dispatch and cashless payments.',
       conversionCta: 'Deploy Upesi',
       gallery: [],
       storyBlocks: [
         {
-          title: 'One Tap to Book a Ride',
-          text: 'Customers open the app, enter their destination, see the fare estimate, and confirm—matched with the nearest available rider in seconds.',
+          title: 'One Tap to Book',
+          text: 'Enter destination, see fare estimate, confirm—matched in seconds.',
           image:
             'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'Riders See Every Opportunity',
-          text: 'Available riders receive booking requests with route details, fare estimates, and navigation—maximizing their earnings while minimizing idle time.',
+          text: 'Booking requests with route details and navigation maximize earnings.',
           image:
             'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'Operators See Everything',
-          text: 'From a single dashboard, operators monitor active rides, rider locations, earnings, and platform health—giving complete operational visibility.',
+          text: 'Active rides, locations, earnings, and platform health from one dashboard.',
           image:
             'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'Upesi transformed our boda boda operations from phone dispatch to a real-time digital platform. Our riders earn more and our customers trust the system.',
+          'Upesi transformed our operations from phone dispatch to a real-time digital platform.',
         author: 'Mobility Operations Team',
       },
     },
@@ -1256,13 +1202,13 @@ export const platformApps = [
     name: 'Maji OS',
     fullName: 'Maji OS Smart Water Utility',
     description:
-      'AI-powered smart water utility intelligence and non-revenue water recovery platform for African water companies. Powered by AEGIS.',
+      'Smart water utility intelligence and non-revenue water recovery platform.',
     url: 'https://maji-os.vercel.app',
     marketplaceUrl: 'https://maji-os.vercel.app',
     image:
       'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=80',
     overview:
-      'Maji OS is an AI-powered smart water utility intelligence platform designed for African water companies. It provides tenant-aware water utility management, telemetry ingestion from smart meters, AI-powered anomaly detection, non-revenue water recovery, and comprehensive reporting. Powered by AEGIS, it delivers advanced AI-driven leak prediction, demand forecasting, and intelligent infrastructure optimization.',
+      'Maji OS provides tenant-aware water utility management, telemetry ingestion, AI anomaly detection, and NRW recovery for African water companies.',
     modules: [
       'Multi-tenant water utility management with tenant isolation',
       'Telemetry ingestion from smart meters, flow meters, and pressure sensors',
@@ -1284,43 +1230,39 @@ export const platformApps = [
     landing: {
       headline: 'Intelligent Water Management for African Utilities',
       subtext:
-        'Maji OS brings AI-powered intelligence to water utility operations. Powered by AEGIS, the platform gains advanced AI-driven leak prediction, demand forecasting, and intelligent infrastructure optimization—turning raw telemetry into smarter water management decisions.',
+        'Maji OS brings AI-powered intelligence to water utility operations. AEGIS adds leak prediction, demand forecasting, and infrastructure optimization.',
       primaryCta: 'Explore Maji OS',
       secondaryCta: 'View Architecture',
-      valueBlock:
-        'Maji OS eliminates blind spots in water utility operations. Smart meter data, anomaly detection, leak probability, and revenue recovery flow through one intelligent system. AEGIS intelligence layer adds predictive leak modeling, demand pattern analysis, and infrastructure health scoring—helping utilities prevent losses and optimize water distribution.',
       capabilities: [
         {
           badge: 'TD',
           title: 'Telemetry & Devices',
-          text: 'Ingest data from smart meters, flow sensors, and pressure monitors with NEXUS IoT integration.',
+          text: 'Ingest data from smart meters, flow sensors, and pressure monitors.',
         },
         {
           badge: 'AI',
           title: 'AI Intelligence',
-          text: 'Anomaly detection, leak probability scoring, and predictive analytics from telemetry windows.',
+          text: 'Anomaly detection, leak probability scoring, and predictive analytics.',
         },
         {
           badge: 'NR',
           title: 'NRW Recovery',
-          text: 'Track non-revenue water, forecast losses, and measure revenue recovery with precision.',
+          text: 'Track non-revenue water, forecast losses, and measure recovery.',
         },
         {
           badge: 'TD',
           title: 'Technician Dispatch',
-          text: 'Dispatch field teams with repair tracking and offline-first mobile capabilities.',
+          text: 'Dispatch field teams with repair tracking and offline-first mobile.',
         },
         {
           badge: 'AI',
           title: 'AEGIS Intelligence',
-          text: 'AI-powered leak prediction modeling, demand pattern analysis, and infrastructure health scoring that help utilities prevent losses and optimize water distribution.',
+          text: 'Leak prediction modeling, demand analysis, and infrastructure health scoring.',
         },
       ],
-      authority:
-        'Built for water utilities requiring intelligent infrastructure management. Maji OS provides the AI-powered intelligence layer that transforms raw telemetry into actionable insights and measurable recovery. AEGIS integration means every meter, every pipe, every pressure reading feeds into predictive models—helping utilities prevent leaks before they happen and optimize distribution across entire networks.',
       highlights: [
         'AI-powered leak detection and anomaly scoring',
-        'PostGIS spatial queries for utility asset management',
+        'PostGIS spatial queries for asset management',
         'NEXUS IoT integration for real-time telemetry',
         'AEGIS-powered leak prediction and demand forecasting',
       ],
@@ -1330,32 +1272,32 @@ export const platformApps = [
         { label: 'Spatial assets', value: 'PostGIS-powered queries' },
       ],
       conversion:
-        'Stop losing revenue to undetected leaks and manual operations. Deploy Maji OS to bring AI-powered intelligence to your water utility infrastructure.',
+        'Deploy Maji OS to bring AI-powered intelligence to your water utility.',
       conversionCta: 'Deploy Maji OS',
       gallery: [],
       storyBlocks: [
         {
           title: 'Smart Meters, Smarter Insights',
-          text: 'Telemetry from thousands of smart meters flows through NEXUS into Maji OS, where AI analyzes patterns and surfaces anomalies before they become losses.',
+          text: 'Telemetry flows through NEXUS where AI analyzes patterns and surfaces anomalies.',
           image:
             'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'From Detection to Dispatch',
-          text: 'When an anomaly is detected, Maji OS scores the leak probability and can dispatch technicians automatically—reducing response time from days to hours.',
+          text: 'Anomaly detected, leak scored, technicians dispatched automatically.',
           image:
             'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80',
         },
         {
           title: 'Revenue Recovery Dashboard',
-          text: 'Track supplied volume, billed consumption, lost water, and recovered revenue in real time—giving utility managers complete financial visibility.',
+          text: 'Track supplied volume, billed consumption, and recovered revenue in real time.',
           image:
             'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
         },
       ],
       testimonial: {
         quote:
-          'Maji OS gave us visibility into our water network we never had before. The AI detected leaks we would have missed and helped us recover significant revenue.',
+          'Maji OS gave us visibility into our network we never had. The AI detected leaks we would have missed.',
         author: 'Water Utility Operations',
       },
     },

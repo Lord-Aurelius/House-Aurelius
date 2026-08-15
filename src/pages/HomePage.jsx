@@ -110,10 +110,8 @@ export function HomePage() {
             <span className="hero-title-accent">Technologies</span>
           </h1>
           <p className="hero-intro">
-            One gateway to AEGIS, HAES, HAPOS, HARE, Church-lib, Hifathi, Mkulima, PIOS,
-            PaymentOS, NEXUS, Upesi, and Maji OS - purpose-built platforms for AI governance,
-            education, salons, property, ministry, personal finance, agriculture, political
-            intelligence, payments, IoT, mobility, and water utilities across Africa.
+            Twelve purpose-built platforms, one connected ecosystem.
+            Built for schools, salons, property, ministry, agriculture, and enterprises across Africa.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#platforms">
@@ -129,11 +127,9 @@ export function HomePage() {
       <section id="promo" className="section promo-section">
         <div className="promo-copy">
           <p className="hero-eyebrow">20 Second Product Promo</p>
-          <h2 className="section-title">See the House Aurelius platform story in motion</h2>
+          <h2 className="section-title">See the platform story in motion</h2>
           <p className="section-intro">
-            A quick overview of the connected platform ecosystem built for African schools,
-            salons, property teams, ministries, personal finance, agriculture, and campaign
-            operations.
+            A quick overview of the connected ecosystem built for African businesses.
           </p>
           <div className="promo-actions">
             <a className="button button-primary" href="/videos/house-aurelius-promo.mp4" download>
@@ -165,10 +161,10 @@ export function HomePage() {
 
       <section id="platforms" className="section">
         <div className="section-header">
+          <div className="section-divider" />
           <h2 className="section-title">Connected Platforms</h2>
           <p className="section-intro">
-            Each platform is purpose-built for its industry. Click any card to explore features,
-            capabilities, and how it can be deployed for your operation.
+            Each platform is purpose-built for its industry. Click to explore.
           </p>
         </div>
         <div className="platforms-grid">
@@ -180,9 +176,10 @@ export function HomePage() {
 
       <section className="section stats-section">
         <div className="section-header">
-          <h2 className="section-title">Public Dashboard Snapshot</h2>
+          <div className="section-divider" />
+          <h2 className="section-title">Public Dashboard</h2>
           <p className="section-intro">
-            These metrics are intentionally aggregated so internal records stay private.
+            Aggregated metrics — internal records stay private.
           </p>
           {metricsSource !== 'api' ? null : (
             <p className="section-intro meta">Source: connected public app APIs</p>

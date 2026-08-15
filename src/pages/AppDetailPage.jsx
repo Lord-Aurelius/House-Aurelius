@@ -12,7 +12,6 @@ export function AppDetailPage() {
     (item) => item.id === appId || toSlug(item.name) === appId || toSlug(item.fullName) === appId,
   )
 
-  // Find next/prev platform for navigation
   const currentIndex = platformApps.findIndex(p => p.id === app?.id)
   const prevApp = currentIndex > 0 ? platformApps[currentIndex - 1] : null
   const nextApp = currentIndex < platformApps.length - 1 ? platformApps[currentIndex + 1] : null
@@ -71,7 +70,7 @@ export function AppDetailPage() {
 
         {app.landing && (
           <div className="haes-landing top-space">
-            <section className="detail-block">
+            <section className="detail-block reveal">
               <h2>{app.landing.headline}</h2>
               <p className="muted">{app.landing.subtext}</p>
               <div className="actions">
@@ -82,11 +81,6 @@ export function AppDetailPage() {
                   {app.landing.secondaryCta}
                 </a>
               </div>
-            </section>
-
-            <section className="detail-block top-space">
-              <h2>Value Block</h2>
-              <p className="muted">{app.landing.valueBlock}</p>
             </section>
 
             <section className="detail-block top-space reveal">
@@ -102,14 +96,9 @@ export function AppDetailPage() {
               </div>
             </section>
 
-            <section className="detail-block top-space">
-              <h2>Authority Statement</h2>
-              <p className="muted">{app.landing.authority}</p>
-            </section>
-
             {app.landing.highlights && (
-              <section className="detail-block top-space">
-                <h2>Why Choose {app.name}</h2>
+              <section className="detail-block top-space reveal">
+                <h2>Why {app.name}</h2>
                 <ul className="highlight-list">
                   {app.landing.highlights.map((highlight) => (
                     <li key={highlight}>{highlight}</li>
@@ -119,25 +108,12 @@ export function AppDetailPage() {
             )}
 
             {app.landing.impactMetrics && (
-              <section className="metric-strip top-space">
+              <section className="metric-strip top-space reveal">
                 {app.landing.impactMetrics.map((metric) => (
                   <article key={metric.label} className="metric-pill">
                     <p className="metric-label">{metric.label}</p>
                     <p className="metric-text">{metric.value}</p>
                   </article>
-                ))}
-              </section>
-            )}
-
-            {app.landing.gallery?.length > 0 && (
-              <section className="image-row top-space reveal">
-                {app.landing.gallery.map((image) => (
-                  <img
-                    key={image}
-                    className="haes-gallery-image"
-                    src={image}
-                    alt={`${app.name} platform context`}
-                  />
                 ))}
               </section>
             )}
@@ -166,7 +142,7 @@ export function AppDetailPage() {
               </section>
             )}
 
-            <section className="detail-block top-space conversion-block">
+            <section className="detail-block top-space conversion-block reveal">
               <p>{app.landing.conversion}</p>
               <a className="button primary top-space" href={app.url} target="_blank" rel="noreferrer">
                 {app.landing.conversionCta}
@@ -175,8 +151,8 @@ export function AppDetailPage() {
           </div>
         )}
 
-        <div className="detail-block top-space">
-          <h2>What this app handles</h2>
+        <div className="detail-block top-space reveal">
+          <h2>Modules</h2>
           <ul className="detail-list">
             {app.modules.map((module) => (
               <li key={module}>{module}</li>
@@ -184,8 +160,8 @@ export function AppDetailPage() {
           </ul>
         </div>
 
-        <div className="detail-block top-space">
-          <h2>Primary users</h2>
+        <div className="detail-block top-space reveal">
+          <h2>Primary Users</h2>
           <div className="pill-list">
             {app.audience.map((role) => (
               <span key={role} className="pill">
