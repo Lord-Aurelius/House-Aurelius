@@ -63,7 +63,11 @@ export function AppDetailPage() {
       </nav>
 
       <article className="app-detail top-space">
-        <img className="app-detail-image" src={app.image} alt={`${app.name} overview`} />
+        <img
+          className="app-detail-image"
+          src={app.id === 'aegis' ? '/images/aegis-face.png' : app.image}
+          alt={`${app.name} overview`}
+        />
         <p className="tag">{app.name}</p>
         <h1>{app.fullName}</h1>
         <p className="muted">{app.overview}</p>

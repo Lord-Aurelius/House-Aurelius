@@ -103,24 +103,29 @@ export function HomePage() {
   return (
     <>
       <section ref={heroRef} className={`hero ${heroVisible ? 'is-visible' : ''}`}>
-        <div className="hero-copy">
-          <p className="hero-eyebrow">Powered by AEGIS</p>
-          <h1 className="hero-title">
-            House Aurelius
-            <span className="hero-title-accent">Technologies</span>
-          </h1>
-          <p className="hero-intro">
-            Twelve purpose-built platforms, one intelligence layer.
-            AEGIS understands, protects, and executes across schools, salons, property,
-            ministry, agriculture, and enterprises throughout Africa.
-          </p>
-          <div className="hero-actions">
-            <a className="button button-primary" href="#platforms">
-              Explore Platforms
-            </a>
-            <Link className="button button-secondary" to="/about">
-              Meet the Team
-            </Link>
+        <div className="hero-inner">
+          <div className="hero-copy">
+            <p className="hero-eyebrow">Powered by AEGIS</p>
+            <h1 className="hero-title">
+              House Aurelius
+              <span className="hero-title-accent">Technologies</span>
+            </h1>
+            <p className="hero-intro">
+              Twelve purpose-built platforms, one intelligence layer.
+              AEGIS understands, protects, and executes across schools, salons, property,
+              ministry, agriculture, and enterprises throughout Africa.
+            </p>
+            <div className="hero-actions">
+              <a className="button button-primary" href="#platforms">
+                Explore Platforms
+              </a>
+              <Link className="button button-secondary" to="/about">
+                Meet the Team
+              </Link>
+            </div>
+          </div>
+          <div className="hero-visual-aegis">
+            <img src="/images/aegis-face.png" alt="AEGIS — Intelligence, Protection, Execution" className="aegis-hero-image" />
           </div>
         </div>
       </section>
