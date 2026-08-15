@@ -104,14 +104,15 @@ export function HomePage() {
     <>
       <section ref={heroRef} className={`hero ${heroVisible ? 'is-visible' : ''}`}>
         <div className="hero-copy">
-          <p className="hero-eyebrow">Unified Business Platform</p>
+          <p className="hero-eyebrow">Powered by AEGIS</p>
           <h1 className="hero-title">
             House Aurelius
             <span className="hero-title-accent">Technologies</span>
           </h1>
           <p className="hero-intro">
-            Twelve purpose-built platforms, one connected ecosystem.
-            Built for schools, salons, property, ministry, agriculture, and enterprises across Africa.
+            Twelve purpose-built platforms, one intelligence layer.
+            AEGIS understands, protects, and executes across schools, salons, property,
+            ministry, agriculture, and enterprises throughout Africa.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#platforms">
